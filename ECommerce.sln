@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E66B0EFE-23BD-43C9-8D3B-899195E7601C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{49FC4F9E-2612-43E4-9A16-FBB0FDF50E4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Shared", "src\Shared\ECommerce.Shared\ECommerce.Shared.csproj", "{DCBEDEBE-356D-4AE8-B485-C725BC5E9213}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{98E57DCB-0010-43AF-8B8D-EAF0732E3F46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{1A382328-117D-4B5C-8D47-15AFC7238D23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.API", "src\Services\Identity\Identity.API\Identity.API.csproj", "{7A47CC58-BC73-483A-BA5C-2A2C63E81633}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCBEDEBE-356D-4AE8-B485-C725BC5E9213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCBEDEBE-356D-4AE8-B485-C725BC5E9213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCBEDEBE-356D-4AE8-B485-C725BC5E9213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCBEDEBE-356D-4AE8-B485-C725BC5E9213}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A47CC58-BC73-483A-BA5C-2A2C63E81633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A47CC58-BC73-483A-BA5C-2A2C63E81633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A47CC58-BC73-483A-BA5C-2A2C63E81633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A47CC58-BC73-483A-BA5C-2A2C63E81633}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{49FC4F9E-2612-43E4-9A16-FBB0FDF50E4E} = {E66B0EFE-23BD-43C9-8D3B-899195E7601C}
+		{DCBEDEBE-356D-4AE8-B485-C725BC5E9213} = {49FC4F9E-2612-43E4-9A16-FBB0FDF50E4E}
+		{98E57DCB-0010-43AF-8B8D-EAF0732E3F46} = {E66B0EFE-23BD-43C9-8D3B-899195E7601C}
+		{1A382328-117D-4B5C-8D47-15AFC7238D23} = {98E57DCB-0010-43AF-8B8D-EAF0732E3F46}
+		{7A47CC58-BC73-483A-BA5C-2A2C63E81633} = {1A382328-117D-4B5C-8D47-15AFC7238D23}
+	EndGlobalSection
+EndGlobal

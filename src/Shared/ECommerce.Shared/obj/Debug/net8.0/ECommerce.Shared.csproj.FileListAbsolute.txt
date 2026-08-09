@@ -1,0 +1,11 @@
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Shared/ECommerce.Shared/bin/Debug/net8.0/ECommerce.Shared.deps.json
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Shared/ECommerce.Shared/bin/Debug/net8.0/ECommerce.Shared.dll
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Shared/ECommerce.Shared/bin/Debug/net8.0/ECommerce.Shared.pdb
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Shared/ECommerce.Shared/obj/Debug/net8.0/ECommerce.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Shared/ECommerce.Shared/obj/Debug/net8.0/ECommerce.Shared.AssemblyInfoInputs.cache
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Shared/ECommerce.Shared/obj/Debug/net8.0/ECommerce.Shared.AssemblyInfo.cs
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Shared/ECommerce.Shared/obj/Debug/net8.0/ECommerce.Shared.csproj.CoreCompileInputs.cache
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Shared/ECommerce.Shared/obj/Debug/net8.0/ECommerce.Shared.dll
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Shared/ECommerce.Shared/obj/Debug/net8.0/refint/ECommerce.Shared.dll
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Shared/ECommerce.Shared/obj/Debug/net8.0/ECommerce.Shared.pdb
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Shared/ECommerce.Shared/obj/Debug/net8.0/ref/ECommerce.Shared.dll
