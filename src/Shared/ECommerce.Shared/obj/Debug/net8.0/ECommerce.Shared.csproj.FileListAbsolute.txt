@@ -9,3 +9,4 @@
 /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Shared/ECommerce.Shared/obj/Debug/net8.0/refint/ECommerce.Shared.dll
 /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Shared/ECommerce.Shared/obj/Debug/net8.0/ECommerce.Shared.pdb
 /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Shared/ECommerce.Shared/obj/Debug/net8.0/ref/ECommerce.Shared.dll
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Shared/ECommerce.Shared/obj/Debug/net8.0/ECommerce.Shared.csproj.AssemblyReference.cache
