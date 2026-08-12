@@ -119,3 +119,9 @@
 /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
 /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/bin/Debug/net8.0/FluentValidation.dll
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/bin/Debug/net8.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/bin/Debug/net8.0/Pipelines.Sockets.Unofficial.dll
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/bin/Debug/net8.0/StackExchange.Redis.dll

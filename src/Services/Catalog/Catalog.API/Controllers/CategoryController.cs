@@ -47,4 +47,17 @@ public class CategoryController : ControllerBase
         if (!deleted) return NotFound();
         return Ok(new { message = "Category deleted successfully." });
     }
+
+    private readonly IProductService _productService;
+
+    public CategoryController(ICategoryService categoryService, IProductService productService){
+    _categoryService = categoryService;
+    _productService = productService;
+}
+
+    [HttpGet("{id:guid}/products")]
+  public async Task<IActionResult> GetProductsByCategory(Guid id){
+    var products = await _productService.GetByCategoryIdAsync(id);
+    return Ok(products);
+}
 }

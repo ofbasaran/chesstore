@@ -1,5 +1,6 @@
 using Catalog.API.Models.DTOs;
 using Catalog.API.Services;
+using ECommerce.Shared.Wrappers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,10 +18,10 @@ public class ProductController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAll()
+    public async Task<IActionResult> GetAll([FromQuery] ProductQueryParameters queryParameters)
     {
-        var products = await _productService.GetAllAsync();
-        return Ok(products);
+        var result = await _productService.GetAllAsync(queryParameters);
+        return Ok(result);
     }
 
     [HttpGet("{id:guid}")]
