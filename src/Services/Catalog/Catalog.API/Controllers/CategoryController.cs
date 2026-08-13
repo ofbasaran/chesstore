@@ -9,13 +9,16 @@ namespace Catalog.API.Controllers;
 [Route("api/categories")]
 public class CategoryController : ControllerBase
 {
-    private readonly ICategoryService _categoryService;
+   
+     private readonly ICategoryService _categoryService;
+     private readonly IProductService _productService;
 
-    public CategoryController(ICategoryService categoryService)
-    {
-        _categoryService = categoryService;
-    }
+    public CategoryController(ICategoryService categoryService, IProductService productService){
+    _categoryService = categoryService;
+    _productService = productService;
+}
 
+  
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
@@ -48,12 +51,7 @@ public class CategoryController : ControllerBase
         return Ok(new { message = "Category deleted successfully." });
     }
 
-    private readonly IProductService _productService;
 
-    public CategoryController(ICategoryService categoryService, IProductService productService){
-    _categoryService = categoryService;
-    _productService = productService;
-}
 
     [HttpGet("{id:guid}/products")]
   public async Task<IActionResult> GetProductsByCategory(Guid id){
