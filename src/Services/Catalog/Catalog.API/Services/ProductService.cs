@@ -197,4 +197,54 @@ public class ProductService : IProductService
         CategoryId = p.CategoryId,
         CategoryName = p.Category?.Name
     };
+
+    public async Task<bool> ReserveStockAsync(List<StockChangeItemDto> items)
+{
+    var productIds = items.Select(i => i.ProductId).ToList();
+    var products = await _context.Products
+        .Where(p => productIds.Contains(p.Id))
+        .ToListAsync();
+
+    foreach (var item in items)
+    {
+        var product = products.FirstOrDefault(p => p.Id == item.ProductId);
+        if (product == null || !product.IsActive || product.StockQuantity < item.Quantity)
+            return false;
+    }
+
+    foreach (var item in items)
+    {
+        var product = products.First(p => p.Id == item.ProductId);
+        product.StockQuantity -= item.Quantity;
+        product.UpdatedAt = DateTime.UtcNow;
+        _productRepository.Update(product);
+    }
+
+    await _unitOfWork.SaveChangesAsync();
+    await InvalidateProductListCacheAsync();
+    return true;
+}
+
+public async Task ReleaseStockAsync(List<StockChangeItemDto> items)
+{
+    var productIds = items.Select(i => i.ProductId).ToList();
+    var products = await _context.Products
+        .Where(p => productIds.Contains(p.Id))
+        .ToListAsync();
+
+    foreach (var item in items)
+    {
+        var product = products.FirstOrDefault(p => p.Id == item.ProductId);
+        if (product != null)
+        {
+            product.StockQuantity += item.Quantity;
+            product.UpdatedAt = DateTime.UtcNow;
+            _productRepository.Update(product);
+        }
+    }
+
+    await _unitOfWork.SaveChangesAsync();
+    await InvalidateProductListCacheAsync();
+}
+    
 }

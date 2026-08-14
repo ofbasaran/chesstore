@@ -52,3 +52,7 @@
 /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Cart/Cart.API/obj/Debug/net8.0/Cart.API.pdb
 /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Cart/Cart.API/obj/Debug/net8.0/Cart.API.genruntimeconfig.cache
 /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Cart/Cart.API/obj/Debug/net8.0/ref/Cart.API.dll
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Cart/Cart.API/bin/Debug/net8.0/MassTransit.dll
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Cart/Cart.API/bin/Debug/net8.0/MassTransit.Abstractions.dll
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Cart/Cart.API/bin/Debug/net8.0/MassTransit.RabbitMqTransport.dll
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Cart/Cart.API/bin/Debug/net8.0/RabbitMQ.Client.dll

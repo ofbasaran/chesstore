@@ -1,5 +1,3 @@
-
-
 using Catalog.API.Models.DTOs;
 using ECommerce.Shared.Wrappers;
 
@@ -13,4 +11,6 @@ public interface IProductService
     Task<ProductDto> CreateAsync(CreateProductDto dto);
     Task<bool> UpdateAsync(Guid id, UpdateProductDto dto);
     Task<bool> DeleteAsync(Guid id);
+    Task<bool> ReserveStockAsync(List<StockChangeItemDto> items);
+    Task ReleaseStockAsync(List<StockChangeItemDto> items);
 }

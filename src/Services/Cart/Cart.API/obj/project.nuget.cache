@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "7SWffBzgH10=",
+  "dgSpecHash": "IvWEawC+at8=",
   "success": true,
   "projectFilePath": "/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Cart/Cart.API/Cart.API.csproj",
   "expectedPackageFiles": [
+    "/Users/omerfarukbasaran/.nuget/packages/masstransit/8.3.4/masstransit.8.3.4.nupkg.sha512",
+    "/Users/omerfarukbasaran/.nuget/packages/masstransit.abstractions/8.3.4/masstransit.abstractions.8.3.4.nupkg.sha512",
+    "/Users/omerfarukbasaran/.nuget/packages/masstransit.rabbitmq/8.3.4/masstransit.rabbitmq.8.3.4.nupkg.sha512",
     "/Users/omerfarukbasaran/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/8.0.11/microsoft.aspnetcore.authentication.jwtbearer.8.0.11.nupkg.sha512",
     "/Users/omerfarukbasaran/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.3.11/microsoft.aspnetcore.http.abstractions.2.3.11.nupkg.sha512",
     "/Users/omerfarukbasaran/.nuget/packages/microsoft.aspnetcore.http.features/2.3.10/microsoft.aspnetcore.http.features.2.3.10.nupkg.sha512",
@@ -15,8 +18,14 @@
     "/Users/omerfarukbasaran/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "/Users/omerfarukbasaran/.nuget/packages/microsoft.extensions.caching.memory/8.0.1/microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",
     "/Users/omerfarukbasaran/.nuget/packages/microsoft.extensions.caching.stackexchangeredis/8.0.11/microsoft.extensions.caching.stackexchangeredis.8.0.11.nupkg.sha512",
+    "/Users/omerfarukbasaran/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "/Users/omerfarukbasaran/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.1/microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
     "/Users/omerfarukbasaran/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "/Users/omerfarukbasaran/.nuget/packages/microsoft.extensions.diagnostics.abstractions/8.0.0/microsoft.extensions.diagnostics.abstractions.8.0.0.nupkg.sha512",
+    "/Users/omerfarukbasaran/.nuget/packages/microsoft.extensions.diagnostics.healthchecks/8.0.0/microsoft.extensions.diagnostics.healthchecks.8.0.0.nupkg.sha512",
+    "/Users/omerfarukbasaran/.nuget/packages/microsoft.extensions.diagnostics.healthchecks.abstractions/8.0.0/microsoft.extensions.diagnostics.healthchecks.abstractions.8.0.0.nupkg.sha512",
+    "/Users/omerfarukbasaran/.nuget/packages/microsoft.extensions.fileproviders.abstractions/8.0.0/microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512",
+    "/Users/omerfarukbasaran/.nuget/packages/microsoft.extensions.hosting.abstractions/8.0.0/microsoft.extensions.hosting.abstractions.8.0.0.nupkg.sha512",
     "/Users/omerfarukbasaran/.nuget/packages/microsoft.extensions.logging/8.0.1/microsoft.extensions.logging.8.0.1.nupkg.sha512",
     "/Users/omerfarukbasaran/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
     "/Users/omerfarukbasaran/.nuget/packages/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg.sha512",
@@ -29,14 +38,17 @@
     "/Users/omerfarukbasaran/.nuget/packages/microsoft.identitymodel.tokens/7.1.2/microsoft.identitymodel.tokens.7.1.2.nupkg.sha512",
     "/Users/omerfarukbasaran/.nuget/packages/microsoft.openapi/1.6.14/microsoft.openapi.1.6.14.nupkg.sha512",
     "/Users/omerfarukbasaran/.nuget/packages/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "/Users/omerfarukbasaran/.nuget/packages/rabbitmq.client/7.0.0/rabbitmq.client.7.0.0.nupkg.sha512",
     "/Users/omerfarukbasaran/.nuget/packages/stackexchange.redis/2.8.16/stackexchange.redis.2.8.16.nupkg.sha512",
     "/Users/omerfarukbasaran/.nuget/packages/swashbuckle.aspnetcore/6.6.2/swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
     "/Users/omerfarukbasaran/.nuget/packages/swashbuckle.aspnetcore.swagger/6.6.2/swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
     "/Users/omerfarukbasaran/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.6.2/swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
     "/Users/omerfarukbasaran/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.6.2/swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
+    "/Users/omerfarukbasaran/.nuget/packages/system.diagnostics.diagnosticsource/8.0.0/system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
     "/Users/omerfarukbasaran/.nuget/packages/system.identitymodel.tokens.jwt/7.1.2/system.identitymodel.tokens.jwt.7.1.2.nupkg.sha512",
-    "/Users/omerfarukbasaran/.nuget/packages/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg.sha512",
-    "/Users/omerfarukbasaran/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512"
+    "/Users/omerfarukbasaran/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
+    "/Users/omerfarukbasaran/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
+    "/Users/omerfarukbasaran/.nuget/packages/system.threading.ratelimiting/8.0.0/system.threading.ratelimiting.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

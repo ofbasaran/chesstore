@@ -57,4 +57,20 @@ public class ProductController : ControllerBase
         if (!deleted) return NotFound();
         return Ok(new { message = "Product deleted successfully." });
     }
+   [HttpPost("reserve-stock")]
+[Authorize]
+public async Task<IActionResult> ReserveStock([FromBody] List<StockChangeItemDto> items)
+{
+    var success = await _productService.ReserveStockAsync(items);
+    if (!success) return BadRequest(new { message = "Insufficient stock for one or more products." });
+    return Ok(new { message = "Stock reserved successfully." });
+}
+
+[HttpPost("release-stock")]
+[Authorize]
+public async Task<IActionResult> ReleaseStock([FromBody] List<StockChangeItemDto> items)
+{
+    await _productService.ReleaseStockAsync(items);
+    return Ok(new { message = "Stock released successfully." });
+}
 }

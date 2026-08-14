@@ -11,6 +11,8 @@ using System.Text;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Catalog.API.Validators;
+using MassTransit;
+using Catalog.API.Consumers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -88,6 +90,22 @@ builder.Services.AddStackExchangeRedisCache(options =>
 {
     options.Configuration = builder.Configuration["Redis:ConnectionString"];
     options.InstanceName = builder.Configuration["Redis:InstanceName"];
+});
+
+builder.Services.AddMassTransit(x =>
+{
+    x.AddConsumer<StockReservationRequestedConsumer>();
+
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host("localhost", "/", h =>
+        {
+            h.Username("guest");
+            h.Password("guest");
+        });
+
+        cfg.ConfigureEndpoints(context);
+    });
 });
 
 var app = builder.Build();
