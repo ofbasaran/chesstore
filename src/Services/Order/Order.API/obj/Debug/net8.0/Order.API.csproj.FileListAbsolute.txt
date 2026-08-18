@@ -123,3 +123,4 @@
 /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Order/Order.API/bin/Debug/net8.0/MassTransit.Abstractions.dll
 /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Order/Order.API/bin/Debug/net8.0/MassTransit.RabbitMqTransport.dll
 /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Order/Order.API/bin/Debug/net8.0/RabbitMQ.Client.dll
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Order/Order.API/obj/Debug/net8.0/Order.API.sourcelink.json

@@ -13,4 +13,5 @@ public interface IProductService
     Task<bool> DeleteAsync(Guid id);
     Task<bool> ReserveStockAsync(List<StockChangeItemDto> items);
     Task ReleaseStockAsync(List<StockChangeItemDto> items);
+    
 }

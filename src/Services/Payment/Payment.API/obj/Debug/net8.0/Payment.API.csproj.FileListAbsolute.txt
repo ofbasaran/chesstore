@@ -115,3 +115,4 @@
 /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Payment/Payment.API/obj/Debug/net8.0/Payment.API.pdb
 /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Payment/Payment.API/obj/Debug/net8.0/Payment.API.genruntimeconfig.cache
 /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Payment/Payment.API/obj/Debug/net8.0/ref/Payment.API.dll
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Payment/Payment.API/obj/Debug/net8.0/Payment.API.sourcelink.json

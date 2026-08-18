@@ -95,6 +95,7 @@ builder.Services.AddStackExchangeRedisCache(options =>
 builder.Services.AddMassTransit(x =>
 {
     x.AddConsumer<StockReservationRequestedConsumer>();
+    x.AddConsumer<StockReleaseRequestedConsumer>();
 
     x.UsingRabbitMq((context, cfg) =>
     {

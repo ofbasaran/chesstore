@@ -8,21 +8,27 @@ namespace Order.API.Consumers;
 public class PaymentFailedConsumer : IConsumer<PaymentFailed>
 {
     private readonly IOrderRepository _orderRepository;
+    private readonly IPublishEndpoint _publishEndpoint;
 
-    public PaymentFailedConsumer(IOrderRepository orderRepository)
+    public PaymentFailedConsumer(IOrderRepository orderRepository, IPublishEndpoint publishEndpoint)
     {
         _orderRepository = orderRepository;
+        _publishEndpoint = publishEndpoint;
     }
 
     public async Task Consume(ConsumeContext<PaymentFailed> context)
     {
         var order = await _orderRepository.GetByIdAsync(context.Message.OrderId);
-        if (order == null) return;
+        if (order is null) return;
 
-        order.Status = OrderStatus.Cancelled;
+        order.Status = OrderStatus.Failed;
         order.FailureReason = context.Message.Reason;
         await _orderRepository.UpdateAsync(order);
 
-        // TODO: Compensating action - e.g., release reserved stock, notify user, etc.
+        var items = order.Items
+            .Select(i => new StockItem(i.ProductId, i.Quantity))
+            .ToList();
+
+        await _publishEndpoint.Publish(new StockReleaseRequested(order.Id, items));
     }
 }

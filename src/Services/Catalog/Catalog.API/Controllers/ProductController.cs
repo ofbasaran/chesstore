@@ -73,4 +73,6 @@ public async Task<IActionResult> ReleaseStock([FromBody] List<StockChangeItemDto
     await _productService.ReleaseStockAsync(items);
     return Ok(new { message = "Stock released successfully." });
 }
+
+
 }
