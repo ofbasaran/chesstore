@@ -46,6 +46,7 @@ public class PaymentRequestedConsumer : IConsumer<PaymentRequested>
             {
                 await _publishEndpoint.Publish(new PaymentFailed(
                     message.OrderId,
+                    message.UserId,
                     existing.FailureReason ?? "Payment previously failed"));
             }
             return;
@@ -79,7 +80,7 @@ public class PaymentRequestedConsumer : IConsumer<PaymentRequested>
         else
         {
             _logger.LogWarning("Payment failed for OrderId {OrderId}: {Reason}", message.OrderId, failureReason);
-            await _publishEndpoint.Publish(new PaymentFailed(message.OrderId, failureReason ?? "Unknown error"));
+            await _publishEndpoint.Publish(new PaymentFailed(message.OrderId, message.UserId, failureReason ?? "Unknown error"));
         }
     }
 }

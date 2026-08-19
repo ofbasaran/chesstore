@@ -8,10 +8,12 @@ namespace Order.API.Consumers;
 public class CartClearedConsumer : IConsumer<CartCleared>
 {
     private readonly IOrderRepository _orderRepository;
+    private readonly IPublishEndpoint _publishEndpoint;
 
-    public CartClearedConsumer(IOrderRepository orderRepository)
+    public CartClearedConsumer(IOrderRepository orderRepository, IPublishEndpoint publishEndpoint)
     {
         _orderRepository = orderRepository;
+        _publishEndpoint = publishEndpoint;
     }
 
     public async Task Consume(ConsumeContext<CartCleared> context)
@@ -21,5 +23,7 @@ public class CartClearedConsumer : IConsumer<CartCleared>
 
         order.Status = OrderStatus.Confirmed;
         await _orderRepository.UpdateAsync(order);
+
+        await _publishEndpoint.Publish(new OrderConfirmed(order.Id, order.UserId));
     }
 }
