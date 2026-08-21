@@ -33,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notification", "Notificatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notification.API", "src\Services\Notification\Notification.API\Notification.API.csproj", "{DB80CF1E-0AE8-4725-B43F-04224AE24391}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "src\Services\ApiGateway\ApiGateway.csproj", "{147CD7EB-3802-4C9C-A1A8-A3DB9DDE2E0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{DB80CF1E-0AE8-4725-B43F-04224AE24391}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB80CF1E-0AE8-4725-B43F-04224AE24391}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB80CF1E-0AE8-4725-B43F-04224AE24391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{147CD7EB-3802-4C9C-A1A8-A3DB9DDE2E0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147CD7EB-3802-4C9C-A1A8-A3DB9DDE2E0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147CD7EB-3802-4C9C-A1A8-A3DB9DDE2E0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147CD7EB-3802-4C9C-A1A8-A3DB9DDE2E0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,5 +88,6 @@ Global
 		{250F8DB6-D9B1-41E3-9512-AEBF7D9D85DD} = {98E57DCB-0010-43AF-8B8D-EAF0732E3F46}
 		{F21FA052-9C9F-46B3-9589-9BE9719F67A8} = {98E57DCB-0010-43AF-8B8D-EAF0732E3F46}
 		{DB80CF1E-0AE8-4725-B43F-04224AE24391} = {F21FA052-9C9F-46B3-9589-9BE9719F67A8}
+		{147CD7EB-3802-4C9C-A1A8-A3DB9DDE2E0C} = {98E57DCB-0010-43AF-8B8D-EAF0732E3F46}
 	EndGlobalSection
 EndGlobal
