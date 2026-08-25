@@ -1,0 +1,1482 @@
+Building...
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/ApiGateway
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000001, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000001, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000001, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000001, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000001, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000001, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000001, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000001, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000001, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000002, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000002, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000002, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000003, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000003, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products/9f4325b6-207f-492a-b2e1-81e9b14ad9d5' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000003, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products/9f4325b6-207f-492a-b2e1-81e9b14ad9d5
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000004, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000004, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products/9f4325b6-207f-492a-b2e1-81e9b14ad9d5' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000004, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products/9f4325b6-207f-492a-b2e1-81e9b14ad9d5
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000002, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000005, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000005, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000002, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000002, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000003, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000003, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000005, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000006, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000006, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000003, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000006, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000007, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000007, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000007, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10&categoryId=1874a768-6797-49ea-96ec-c509ac9cdfb8
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000008, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000008, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000008, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10&categoryId=bdcc9208-6eb0-4fc7-95d2-6aad3da0b30d
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000009, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000009, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000009, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10&categoryId=238090b6-dcc9-4b51-ad4e-3f73d0a1049c
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000A, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000A, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000A, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000B, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000004, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000B, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000004, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000004, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000005, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000005, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000B, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000C, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000C, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000005, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000C, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000D, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000D, PreviousRequestId: -
+      The path '/gateway/cart/api/cart' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+warn: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000D, PreviousRequestId: -
+      Client has NOT been authenticated for path '/gateway/cart/api/cart' and pipeline error set. UnauthenticatedError: Request for authenticated route '/gateway/cart/api/cart' was unauthenticated!;
+warn: Ocelot.Responder.Middleware.ResponderMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000D, PreviousRequestId: -
+      ResponderMiddleware found 1 error ->
+      UnauthenticatedError: Request for authenticated route '/gateway/cart/api/cart' was unauthenticated!
+      Setting error response for request: GET /gateway/cart/api/cart
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000006, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000006, PreviousRequestId: -
+      The path '/gateway/cart/api/cart' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+warn: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000006, PreviousRequestId: -
+      Client has NOT been authenticated for path '/gateway/cart/api/cart' and pipeline error set. UnauthenticatedError: Request for authenticated route '/gateway/cart/api/cart' was unauthenticated!;
+warn: Ocelot.Responder.Middleware.ResponderMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000006, PreviousRequestId: -
+      ResponderMiddleware found 1 error ->
+      UnauthenticatedError: Request for authenticated route '/gateway/cart/api/cart' was unauthenticated!
+      Setting error response for request: GET /gateway/cart/api/cart
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000007, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000007, PreviousRequestId: -
+      The path '/gateway/cart/api/cart' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+warn: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000007, PreviousRequestId: -
+      Client has NOT been authenticated for path '/gateway/cart/api/cart' and pipeline error set. UnauthenticatedError: Request for authenticated route '/gateway/cart/api/cart' was unauthenticated!;
+warn: Ocelot.Responder.Middleware.ResponderMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000007, PreviousRequestId: -
+      ResponderMiddleware found 1 error ->
+      UnauthenticatedError: Request for authenticated route '/gateway/cart/api/cart' was unauthenticated!
+      Setting error response for request: GET /gateway/cart/api/cart
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000E, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000E, PreviousRequestId: -
+      The path '/gateway/cart/api/cart' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+warn: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000E, PreviousRequestId: -
+      Client has NOT been authenticated for path '/gateway/cart/api/cart' and pipeline error set. UnauthenticatedError: Request for authenticated route '/gateway/cart/api/cart' was unauthenticated!;
+warn: Ocelot.Responder.Middleware.ResponderMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000E, PreviousRequestId: -
+      ResponderMiddleware found 1 error ->
+      UnauthenticatedError: Request for authenticated route '/gateway/cart/api/cart' was unauthenticated!
+      Setting error response for request: GET /gateway/cart/api/cart
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000F, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000008, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000F, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000008, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000008, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000009, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000009, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000000F, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000010, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000010, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000009, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000010, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000012, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/identity/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000012, PreviousRequestId: -
+      No authentication is required for the path '/gateway/identity/api/auth/register' in the route /gateway/identity/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000012, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5287/api/auth/register
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000014, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/identity/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000014, PreviousRequestId: -
+      No authentication is required for the path '/gateway/identity/api/auth/login' in the route /gateway/identity/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000014, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5287/api/auth/login
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000003, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:0000000B, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000016, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000003, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:0000000B, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000016, PreviousRequestId: -
+      The path '/gateway/cart/api/cart' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000016, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/cart/api/cart' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:0000000B, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:0000000C, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:0000000C, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000003, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000004, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000004, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:0000000C, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000004, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000016, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5250/api/cart
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000017, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000017, PreviousRequestId: -
+      The path '/gateway/cart/api/cart' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000017, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/cart/api/cart' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000017, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5250/api/cart
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000018, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000018, PreviousRequestId: -
+      The path '/gateway/cart/api/cart' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000018, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/cart/api/cart' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000018, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5250/api/cart
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000005, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000019, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000019, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000005, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000005, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000006, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000006, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000019, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000006, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000001A, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000001A, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000001A, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000001C, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000001C, PreviousRequestId: -
+      The path '/gateway/cart/api/cart/items' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000001C, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/cart/api/cart/items' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000001C, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5250/api/cart/items
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000001D, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000001D, PreviousRequestId: -
+      The path '/gateway/cart/api/cart/items' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000001D, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/cart/api/cart/items' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:0000001D, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5250/api/cart/items
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000008, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000008, PreviousRequestId: -
+      The path '/gateway/cart/api/cart' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000008, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/cart/api/cart' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000008, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5250/api/cart
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000009, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000009, PreviousRequestId: -
+      The path '/gateway/cart/api/cart' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000009, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/cart/api/cart' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000009, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5250/api/cart
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000000A, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000000A, PreviousRequestId: -
+      The path '/gateway/cart/api/cart' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000000A, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/cart/api/cart' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000000A, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5250/api/cart
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000000B, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000000B, PreviousRequestId: -
+      The path '/gateway/cart/api/cart' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000000B, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/cart/api/cart' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000000B, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5250/api/cart
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000000D, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/orders/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000000D, PreviousRequestId: -
+      The path '/gateway/orders/api/orders/checkout' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000000D, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/orders/api/orders/checkout' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000000D, PreviousRequestId: -
+      202 Accepted status code of request URI: http://localhost:5185/api/orders/checkout
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000000F, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/payments/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000000F, PreviousRequestId: -
+      No authentication is required for the path '/gateway/payments/api/payments/order/0ccf3ad6-84e1-4211-bf88-7985fd81c20a' in the route /gateway/payments/{everything}.
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000000F, PreviousRequestId: -
+      404 Not Found status code of request URI: http://localhost:5189/api/payments/order/0ccf3ad6-84e1-4211-bf88-7985fd81c20a
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000010, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/payments/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000010, PreviousRequestId: -
+      No authentication is required for the path '/gateway/payments/api/payments/order/0ccf3ad6-84e1-4211-bf88-7985fd81c20a' in the route /gateway/payments/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000010, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5189/api/payments/order/0ccf3ad6-84e1-4211-bf88-7985fd81c20a
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000012, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/orders/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000012, PreviousRequestId: -
+      The path '/gateway/orders/api/orders/checkout' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000012, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/orders/api/orders/checkout' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000012, PreviousRequestId: -
+      202 Accepted status code of request URI: http://localhost:5185/api/orders/checkout
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000014, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/payments/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000014, PreviousRequestId: -
+      No authentication is required for the path '/gateway/payments/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767' in the route /gateway/payments/{everything}.
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000014, PreviousRequestId: -
+      404 Not Found status code of request URI: http://localhost:5189/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000015, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/payments/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000015, PreviousRequestId: -
+      No authentication is required for the path '/gateway/payments/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767' in the route /gateway/payments/{everything}.
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000015, PreviousRequestId: -
+      404 Not Found status code of request URI: http://localhost:5189/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000016, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/payments/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000016, PreviousRequestId: -
+      No authentication is required for the path '/gateway/payments/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767' in the route /gateway/payments/{everything}.
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000016, PreviousRequestId: -
+      404 Not Found status code of request URI: http://localhost:5189/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000018, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/payments/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000018, PreviousRequestId: -
+      No authentication is required for the path '/gateway/payments/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767' in the route /gateway/payments/{everything}.
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000018, PreviousRequestId: -
+      404 Not Found status code of request URI: http://localhost:5189/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000019, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/payments/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000019, PreviousRequestId: -
+      No authentication is required for the path '/gateway/payments/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767' in the route /gateway/payments/{everything}.
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000019, PreviousRequestId: -
+      404 Not Found status code of request URI: http://localhost:5189/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000001A, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/payments/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000001A, PreviousRequestId: -
+      No authentication is required for the path '/gateway/payments/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767' in the route /gateway/payments/{everything}.
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000001A, PreviousRequestId: -
+      404 Not Found status code of request URI: http://localhost:5189/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000001C, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/payments/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000001C, PreviousRequestId: -
+      No authentication is required for the path '/gateway/payments/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767' in the route /gateway/payments/{everything}.
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000001C, PreviousRequestId: -
+      404 Not Found status code of request URI: http://localhost:5189/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000001D, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/payments/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000001D, PreviousRequestId: -
+      No authentication is required for the path '/gateway/payments/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767' in the route /gateway/payments/{everything}.
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000001D, PreviousRequestId: -
+      404 Not Found status code of request URI: http://localhost:5189/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000001E, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/payments/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000001E, PreviousRequestId: -
+      No authentication is required for the path '/gateway/payments/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767' in the route /gateway/payments/{everything}.
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000001E, PreviousRequestId: -
+      404 Not Found status code of request URI: http://localhost:5189/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000020, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/payments/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000020, PreviousRequestId: -
+      No authentication is required for the path '/gateway/payments/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767' in the route /gateway/payments/{everything}.
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000020, PreviousRequestId: -
+      404 Not Found status code of request URI: http://localhost:5189/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000021, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/payments/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000021, PreviousRequestId: -
+      No authentication is required for the path '/gateway/payments/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767' in the route /gateway/payments/{everything}.
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000021, PreviousRequestId: -
+      404 Not Found status code of request URI: http://localhost:5189/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000022, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/payments/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000022, PreviousRequestId: -
+      No authentication is required for the path '/gateway/payments/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767' in the route /gateway/payments/{everything}.
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000022, PreviousRequestId: -
+      404 Not Found status code of request URI: http://localhost:5189/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000024, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/payments/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000024, PreviousRequestId: -
+      No authentication is required for the path '/gateway/payments/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767' in the route /gateway/payments/{everything}.
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000024, PreviousRequestId: -
+      404 Not Found status code of request URI: http://localhost:5189/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000025, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/payments/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000025, PreviousRequestId: -
+      No authentication is required for the path '/gateway/payments/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767' in the route /gateway/payments/{everything}.
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000025, PreviousRequestId: -
+      404 Not Found status code of request URI: http://localhost:5189/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000026, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/payments/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000026, PreviousRequestId: -
+      No authentication is required for the path '/gateway/payments/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767' in the route /gateway/payments/{everything}.
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000026, PreviousRequestId: -
+      404 Not Found status code of request URI: http://localhost:5189/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000028, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/payments/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000028, PreviousRequestId: -
+      No authentication is required for the path '/gateway/payments/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767' in the route /gateway/payments/{everything}.
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000028, PreviousRequestId: -
+      404 Not Found status code of request URI: http://localhost:5189/api/payments/order/9db4dd08-7aef-4176-99e4-1e0e0cb5f767
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000002A, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/orders/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000002A, PreviousRequestId: -
+      The path '/gateway/orders/api/orders' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000002A, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/orders/api/orders' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000002A, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5185/api/orders
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000002B, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/orders/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000002B, PreviousRequestId: -
+      The path '/gateway/orders/api/orders' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000002B, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/orders/api/orders' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000002B, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5185/api/orders
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000002D, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000002D, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DST:00000003, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DST:00000003, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DST:00000003, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DST:00000004, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DST:00000004, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DST:00000004, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000002D, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000002E, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000002E, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000002E, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000030, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000030, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000030, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10&categoryId=bdcc9208-6eb0-4fc7-95d2-6aad3da0b30d
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000032, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000032, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000032, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10&categoryId=1874a768-6797-49ea-96ec-c509ac9cdfb8
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000034, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000034, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000034, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000036, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000036, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000036, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10&categoryId=238090b6-dcc9-4b51-ad4e-3f73d0a1049c
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000038, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000038, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:00000038, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10&categoryId=760605f0-56f8-40e1-9c0d-ad148a0df17b
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000003A, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000003A, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000003A, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10&categoryId=bdcc9208-6eb0-4fc7-95d2-6aad3da0b30d
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000003B, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000003B, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000003B, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10&categoryId=1874a768-6797-49ea-96ec-c509ac9cdfb8
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000003C, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000003C, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSP:0000003C, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DST:00000006, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/orders/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DST:00000006, PreviousRequestId: -
+      The path '/gateway/orders/api/orders' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DST:00000006, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/orders/api/orders' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DST:00000006, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5185/api/orders
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DST:00000007, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/orders/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DST:00000007, PreviousRequestId: -
+      The path '/gateway/orders/api/orders' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DST:00000007, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/orders/api/orders' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DST:00000007, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5185/api/orders
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:0000000F, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000022, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:0000000F, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000022, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:0000000F, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000010, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000010, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000022, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSR:00000010, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000023, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000023, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSQ:00000023, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000002, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000002, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000002, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000002, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000002, PreviousRequestId: -
+      The path '/gateway/cart/api/cart' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000002, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+warn: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000002, PreviousRequestId: -
+      Client has NOT been authenticated for path '/gateway/cart/api/cart' and pipeline error set. UnauthenticatedError: Request for authenticated route '/gateway/cart/api/cart' was unauthenticated!;
+warn: Ocelot.Responder.Middleware.ResponderMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000002, PreviousRequestId: -
+      ResponderMiddleware found 1 error ->
+      UnauthenticatedError: Request for authenticated route '/gateway/cart/api/cart' was unauthenticated!
+      Setting error response for request: GET /gateway/cart/api/cart
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000002, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000002, PreviousRequestId: -
+      The path '/gateway/cart/api/cart' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+warn: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000002, PreviousRequestId: -
+      Client has NOT been authenticated for path '/gateway/cart/api/cart' and pipeline error set. UnauthenticatedError: Request for authenticated route '/gateway/cart/api/cart' was unauthenticated!;
+warn: Ocelot.Responder.Middleware.ResponderMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000002, PreviousRequestId: -
+      ResponderMiddleware found 1 error ->
+      UnauthenticatedError: Request for authenticated route '/gateway/cart/api/cart' was unauthenticated!
+      Setting error response for request: GET /gateway/cart/api/cart
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000004, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/identity/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000004, PreviousRequestId: -
+      No authentication is required for the path '/gateway/identity/api/auth/refresh' in the route /gateway/identity/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000002, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000003, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000003, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000003, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000002, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000004, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000004, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000004, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000004, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5287/api/auth/refresh
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000005, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000005, PreviousRequestId: -
+      The path '/gateway/cart/api/cart' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000005, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/cart/api/cart' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000005, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5250/api/cart
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000005, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000005, PreviousRequestId: -
+      The path '/gateway/cart/api/cart' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000005, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/cart/api/cart' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000005, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5250/api/cart
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000006, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000006, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000004, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000004, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000006, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000007, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000007, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000007, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000004, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000008, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000008, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000008, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000009, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000009, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000006, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000006, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000006, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000009, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000008, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000008, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000003, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000003, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000008, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000003, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000009, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000009, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000009, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000004, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000004, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000004, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:0000000A, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:0000000A, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000000B, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000000B, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:0000000A, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000006, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000006, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000000B, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:0000000B, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:0000000B, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000006, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:0000000B, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000008, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000008, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000008, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:0000000D, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:0000000D, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:0000000D, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:0000000F, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:0000000F, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:0000000F, PreviousRequestId: -
+      201 Created status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000010, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000010, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000010, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000007, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000007, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:0000000A, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:0000000A, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000007, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:0000000A, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000000D, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000000D, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000008, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000008, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000008, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000000D, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000000F, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000000F, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products/30729baa-6db6-4593-89c1-cc74d152746d' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000000F, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products/30729baa-6db6-4593-89c1-cc74d152746d
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000011, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000011, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000011, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000013, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000013, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products/9f4325b6-207f-492a-b2e1-81e9b14ad9d5' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000013, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products/9f4325b6-207f-492a-b2e1-81e9b14ad9d5
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000015, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000015, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000015, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000017, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000017, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products/ecf5aa3d-3c8b-4fa1-abee-c9906f83e790' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000017, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products/ecf5aa3d-3c8b-4fa1-abee-c9906f83e790
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000019, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000019, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:00000019, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000001A, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000001A, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:0000000C, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:0000000C, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000001A, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:0000000A, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:0000000A, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:0000000A, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:0000000C, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:0000000B, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:0000000B, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:0000000B, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:0000000C, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:0000000C, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:0000000C, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:0000000D, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:0000000D, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:0000000D, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:0000000E, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:0000000D, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:0000000D, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:0000000E, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:0000000E, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:0000000D, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000001B, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000001B, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:0000000F, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:0000000F, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000001B, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:0000000F, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000001C, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000001C, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:0000000F, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:0000000F, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000001C, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:0000000F, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000011, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000013, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000011, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000013, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000013, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000011, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000014, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000012, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000012, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000014, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT0:00000014, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000012, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000010, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000010, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000001D, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000001D, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000010, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT1:0000001D, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000012, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000012, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSU:00000003, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSV:00000003, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSV:00000003, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSU:00000003, PreviousRequestId: -
+      The path '/gateway/cart/api/cart' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSU:00000003, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/cart/api/cart' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSU:00000003, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5250/api/cart
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000014, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/cart/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000014, PreviousRequestId: -
+      The path '/gateway/cart/api/cart' is an authenticated route! AuthenticationMiddleware checking if client is authenticated...
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000014, PreviousRequestId: -
+      Client has been authenticated for path '/gateway/cart/api/cart' by 'AuthenticationTypes.Federation' scheme.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000014, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5250/api/cart
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSV:00000003, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000015, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000015, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000015, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000012, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000016, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000016, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000016, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=10
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000014, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000014, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000018, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000018, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000014, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000018, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSU:00000005, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSU:00000005, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000015, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000015, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000015, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSU:00000005, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSU:00000006, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000016, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSU:00000006, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000016, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT2:00000016, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSU:00000006, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000019, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000019, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/products' in the route /gateway/catalog/{everything}.
+info: Ocelot.RateLimiting.RateLimitingMiddleware[0]
+      RequestId: 0HNO2UAVF1DSV:00000005, PreviousRequestId: -
+      Rate limiting is disabled for route '/gateway/catalog/{everything}' via the EnableRateLimiting option.
+info: Ocelot.Authentication.AuthenticationMiddleware[0]
+      RequestId: 0HNO2UAVF1DSV:00000005, PreviousRequestId: -
+      No authentication is required for the path '/gateway/catalog/api/categories' in the route /gateway/catalog/{everything}.
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DSV:00000005, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/categories
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      RequestId: 0HNO2UAVF1DT3:00000019, PreviousRequestId: -
+      200 OK status code of request URI: http://localhost:5035/api/products?pageNumber=1&pageSize=100

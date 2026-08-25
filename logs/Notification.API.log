@@ -1,0 +1,53 @@
+Building...
+[00:48:54 INF] Executed DbCommand (28ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[00:48:54 INF] Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[00:48:54 INF] Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[00:48:54 INF] Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+[00:48:54 INF] Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+[00:48:54 INF] No migrations were applied. The database is already up to date.
+[00:48:54 INF] Configured endpoint OrderConfirmed, Consumer: Notification.API.Consumers.OrderConfirmedConsumer
+[00:48:54 INF] Configured endpoint PaymentFailed, Consumer: Notification.API.Consumers.PaymentFailedConsumer
+[00:48:54 INF] Now listening on: http://localhost:5258
+[00:48:54 INF] Application started. Press Ctrl+C to shut down.
+[00:48:54 INF] Hosting environment: Development
+[00:48:54 INF] Content root path: /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Notification/Notification.API
+[00:48:54 INF] Bus started: rabbitmq://localhost/
+[00:48:55 INF] [MOCK Email] To: 455d65ff-8962-4182-8306-1d23a8acc383 | Message: Your order has been confirmed. Order ID: d3bec85d-c9c2-4d03-8634-8397e4e17abf
+[00:48:55 INF] Executed DbCommand (26ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?', @p7='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "NotificationLogs" ("Id", "Channel", "Content", "IsSuccess", "OrderId", "SentAt", "Type", "UserId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+[00:48:55 INF] OrderConfirmed notification sent for Order d3bec85d-c9c2-4d03-8634-8397e4e17abf
+[00:50:57 INF] [MOCK Email] To: 27ec435f-d0f5-405d-ba7e-a6cbc97fa2c8 | Message: Your payment has failed. Order ID: 0ccf3ad6-84e1-4211-bf88-7985fd81c20a. Reason: Gateway declined the transaction
+[00:50:57 INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?', @p7='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "NotificationLogs" ("Id", "Channel", "Content", "IsSuccess", "OrderId", "SentAt", "Type", "UserId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+[00:50:57 WRN] PaymentFailed notification sent for Order 0ccf3ad6-84e1-4211-bf88-7985fd81c20a
+[00:51:04 INF] [MOCK Email] To: 27ec435f-d0f5-405d-ba7e-a6cbc97fa2c8 | Message: Your order has been confirmed. Order ID: 9db4dd08-7aef-4176-99e4-1e0e0cb5f767
+[00:51:04 INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?', @p7='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "NotificationLogs" ("Id", "Channel", "Content", "IsSuccess", "OrderId", "SentAt", "Type", "UserId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+[00:51:04 INF] OrderConfirmed notification sent for Order 9db4dd08-7aef-4176-99e4-1e0e0cb5f767

@@ -1,0 +1,31 @@
+Building...
+info: MassTransit[0]
+      Configured endpoint CartClearRequested, Consumer: Cart.API.Consumers.CartClearRequestedConsumer
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5250
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Cart/Cart.API
+info: MassTransit[0]
+      Bus started: rabbitmq://localhost/
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: System.Net.Http.HttpClient.ICatalogClient.LogicalHandler[100]
+      Start processing HTTP request GET http://localhost:5035/api/products/30729baa-6db6-4593-89c1-cc74d152746d
+info: System.Net.Http.HttpClient.ICatalogClient.ClientHandler[100]
+      Sending HTTP request GET http://localhost:5035/api/products/30729baa-6db6-4593-89c1-cc74d152746d
+info: System.Net.Http.HttpClient.ICatalogClient.ClientHandler[101]
+      Received HTTP response headers after 39.9513ms - 200
+info: System.Net.Http.HttpClient.ICatalogClient.LogicalHandler[101]
+      End processing HTTP request after 45.1672ms - 200
+info: System.Net.Http.HttpClient.ICatalogClient.LogicalHandler[100]
+      Start processing HTTP request GET http://localhost:5035/api/products/ecf5aa3d-3c8b-4fa1-abee-c9906f83e790
+info: System.Net.Http.HttpClient.ICatalogClient.ClientHandler[100]
+      Sending HTTP request GET http://localhost:5035/api/products/ecf5aa3d-3c8b-4fa1-abee-c9906f83e790
+info: System.Net.Http.HttpClient.ICatalogClient.ClientHandler[101]
+      Received HTTP response headers after 8.708ms - 200
+info: System.Net.Http.HttpClient.ICatalogClient.LogicalHandler[101]
+      End processing HTTP request after 8.8572ms - 200

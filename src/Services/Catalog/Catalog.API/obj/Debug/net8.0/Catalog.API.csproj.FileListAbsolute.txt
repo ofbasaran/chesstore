@@ -130,3 +130,4 @@
 /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/bin/Debug/net8.0/MassTransit.RabbitMqTransport.dll
 /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/bin/Debug/net8.0/RabbitMQ.Client.dll
 /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/obj/Debug/net8.0/Catalog.API.sourcelink.json
+/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/bin/Debug/net8.0/Catalog.API.staticwebassets.runtime.json

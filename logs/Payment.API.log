@@ -1,0 +1,175 @@
+Building...
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1 FROM pg_catalog.pg_class c
+          JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+          WHERE n.nspname='public' AND
+                c.relname='__EFMigrationsHistory'
+      )
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1 FROM pg_catalog.pg_class c
+          JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+          WHERE n.nspname='public' AND
+                c.relname='__EFMigrationsHistory'
+      )
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1 FROM pg_catalog.pg_class c
+          JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+          WHERE n.nspname='public' AND
+                c.relname='__EFMigrationsHistory'
+      )
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Migrations[20405]
+      No migrations were applied. The database is already up to date.
+info: MassTransit[0]
+      Configured endpoint PaymentRequested, Consumer: Payment.API.Consumers.PaymentRequestedConsumer
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5189
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Payment/Payment.API
+info: MassTransit[0]
+      Bus started: rabbitmq://localhost/
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (19ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."OrderId" = @__orderId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__idempotencyKey_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."IdempotencyKey" = @__idempotencyKey_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Decimal), @p2='?' (DbType = DateTime), @p3='?', @p4='?', @p5='?' (DbType = Guid), @p6='?' (DbType = DateTime), @p7='?' (DbType = Int32), @p8='?'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "PaymentTransactions" ("Id", "Amount", "CreatedAt", "FailureReason", "IdempotencyKey", "OrderId", "ProcessedAt", "Status", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@p3='?' (DbType = Guid), @p0='?', @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      UPDATE "PaymentTransactions" SET "FailureReason" = @p0, "ProcessedAt" = @p1, "Status" = @p2
+      WHERE "Id" = @p3;
+warn: Payment.API.Consumers.PaymentRequestedConsumer[0]
+      Payment failed for OrderId 0ccf3ad6-84e1-4211-bf88-7985fd81c20a: Gateway declined the transaction
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."OrderId" = @__orderId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."OrderId" = @__orderId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."OrderId" = @__orderId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."OrderId" = @__orderId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."OrderId" = @__orderId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."OrderId" = @__orderId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."OrderId" = @__orderId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."OrderId" = @__orderId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."OrderId" = @__orderId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."OrderId" = @__orderId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."OrderId" = @__orderId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."OrderId" = @__orderId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."OrderId" = @__orderId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."OrderId" = @__orderId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."OrderId" = @__orderId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."OrderId" = @__orderId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@__orderId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT p."Id", p."Amount", p."CreatedAt", p."FailureReason", p."IdempotencyKey", p."OrderId", p."ProcessedAt", p."Status", p."UserId"
+      FROM "PaymentTransactions" AS p
+      WHERE p."OrderId" = @__orderId_0
+      LIMIT 1

@@ -1,11 +1,77 @@
 {
   "Version": 1,
-  "Hash": "dsw+z5JRLfbvfnm4YN5rLHYjFUjigEjIU18xRsIfEX0=",
+  "Hash": "hp/+qoBIpJ9jBewhx5Ng8G4z8egP7uE1pECKDZXPwNo=",
   "Source": "Catalog.API",
   "BasePath": "_content/Catalog.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Catalog.API/wwwroot",
+      "Source": "Catalog.API",
+      "ContentRoot": "/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/wwwroot/",
+      "BasePath": "_content/Catalog.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/wwwroot/images/knight.jpg",
+      "SourceId": "Catalog.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/wwwroot/",
+      "BasePath": "_content/Catalog.API",
+      "RelativePath": "images/knight.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/knight.jpg"
+    },
+    {
+      "Identity": "/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/wwwroot/images/queen.jpg",
+      "SourceId": "Catalog.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/wwwroot/",
+      "BasePath": "_content/Catalog.API",
+      "RelativePath": "images/queen.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/queen.jpg"
+    },
+    {
+      "Identity": "/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/wwwroot/images/rook.jpg",
+      "SourceId": "Catalog.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Catalog/Catalog.API/wwwroot/",
+      "BasePath": "_content/Catalog.API",
+      "RelativePath": "images/rook.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/rook.jpg"
+    }
+  ]
 }

@@ -1,0 +1,1848 @@
+Building...
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10401]
+      An 'IServiceProvider' was created for internal use by Entity Framework.
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 8.0.11 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.11+52a6b9f2ddd23fcabd1c673b4a2e273495129481' with options: None
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20005]
+      Creating DbConnection.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20006]
+      Created DbConnection. (31ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (6ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteScalar' (3ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteScalar' (5ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1 FROM pg_catalog.pg_class c
+          JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+          WHERE n.nspname='public' AND
+                c.relname='__EFMigrationsHistory'
+      )
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (37ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1 FROM pg_catalog.pg_class c
+          JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+          WHERE n.nspname='public' AND
+                c.relname='__EFMigrationsHistory'
+      )
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (17ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 2ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Migrations[20400]
+      Migrating using database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteScalar' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1 FROM pg_catalog.pg_class c
+          JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+          WHERE n.nspname='public' AND
+                c.relname='__EFMigrationsHistory'
+      )
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1 FROM pg_catalog.pg_class c
+          JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+          WHERE n.nspname='public' AND
+                c.relname='__EFMigrationsHistory'
+      )
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteScalar'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteScalar' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteScalar' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1 FROM pg_catalog.pg_class c
+          JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+          WHERE n.nspname='public' AND
+                c.relname='__EFMigrationsHistory'
+      )
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1 FROM pg_catalog.pg_class c
+          JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+          WHERE n.nspname='public' AND
+                c.relname='__EFMigrationsHistory'
+      )
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 0ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+info: Microsoft.EntityFrameworkCore.Migrations[20405]
+      No migrations were applied. The database is already up to date.
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10407]
+      'AppDbContext' disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20007]
+      Disposing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20008]
+      Disposed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.Extensions.Hosting.Internal.Host[1]
+      Hosting starting
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[62]
+      User profile is available. Using '/Users/omerfarukbasaran/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+info: MassTransit[0]
+      Configured endpoint StockReserved, Consumer: Order.API.Consumers.StockReservedConsumer
+info: MassTransit[0]
+      Configured endpoint StockReservationFailed, Consumer: Order.API.Consumers.StockReservationFailedConsumer
+info: MassTransit[0]
+      Configured endpoint PaymentCompleted, Consumer: Order.API.Consumers.PaymentCompletedConsumer
+info: MassTransit[0]
+      Configured endpoint PaymentFailed, Consumer: Order.API.Consumers.PaymentFailedConsumer
+info: MassTransit[0]
+      Configured endpoint CartCleared, Consumer: Order.API.Consumers.CartClearedConsumer
+info: MassTransit[0]
+      Configured endpoint PaymentRequested, Consumer: Order.API.Consumers.PaymentRequestedConsumer
+dbug: MassTransit.Transports.BusDepot[0]
+      Starting bus instances: IBus
+dbug: MassTransit[0]
+      Starting bus: rabbitmq://localhost/
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5185
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: /Users/omerfarukbasaran/Documents/ecommerce-platform/src/Services/Order/Order.API
+dbug: Microsoft.Extensions.Hosting.Internal.Host[2]
+      Hosting started
+dbug: MassTransit[0]
+      Connect: guest@localhost:5672/
+dbug: MassTransit[0]
+      Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 63061)
+dbug: MassTransit[0]
+      Endpoint Ready: rabbitmq://localhost/192_OrderAPI_bus_cfoyyygoyt5c1qd6bdxofhief6?temporary=true
+dbug: MassTransit[0]
+      Declare queue: name: StockReservationFailed, durable, consumer-count: 0 message-count: 0
+dbug: MassTransit[0]
+      Declare queue: name: CartCleared, durable, consumer-count: 0 message-count: 0
+dbug: MassTransit[0]
+      Declare queue: name: PaymentRequested, durable, consumer-count: 0 message-count: 0
+dbug: MassTransit[0]
+      Declare queue: name: PaymentCompleted, durable, consumer-count: 0 message-count: 0
+dbug: MassTransit[0]
+      Declare queue: name: StockReserved, durable, consumer-count: 0 message-count: 0
+dbug: MassTransit[0]
+      Declare queue: name: PaymentFailed, durable, consumer-count: 1 message-count: 0
+dbug: MassTransit[0]
+      Declare exchange: name: CartCleared, type: fanout, durable
+dbug: MassTransit[0]
+      Declare exchange: name: StockReserved, type: fanout, durable
+dbug: MassTransit[0]
+      Declare exchange: name: PaymentRequested, type: fanout, durable
+dbug: MassTransit[0]
+      Declare exchange: name: StockReservationFailed, type: fanout, durable
+dbug: MassTransit[0]
+      Declare exchange: name: PaymentCompleted, type: fanout, durable
+dbug: MassTransit[0]
+      Declare exchange: name: PaymentFailed, type: fanout, durable
+dbug: MassTransit[0]
+      Declare exchange: name: ECommerce.Shared.Events:CartCleared, type: fanout, durable
+dbug: MassTransit[0]
+      Declare exchange: name: ECommerce.Shared.Events:PaymentFailed, type: fanout, durable
+dbug: MassTransit[0]
+      Declare exchange: name: ECommerce.Shared.Events:PaymentRequested, type: fanout, durable
+dbug: MassTransit[0]
+      Declare exchange: name: ECommerce.Shared.Events:StockReserved, type: fanout, durable
+dbug: MassTransit[0]
+      Declare exchange: name: ECommerce.Shared.Events:StockReservationFailed, type: fanout, durable
+dbug: MassTransit[0]
+      Declare exchange: name: ECommerce.Shared.Events:PaymentCompleted, type: fanout, durable
+dbug: MassTransit[0]
+      Bind queue: source: PaymentFailed, destination: PaymentFailed
+dbug: MassTransit[0]
+      Bind queue: source: StockReserved, destination: StockReserved
+dbug: MassTransit[0]
+      Bind queue: source: CartCleared, destination: CartCleared
+dbug: MassTransit[0]
+      Bind queue: source: StockReservationFailed, destination: StockReservationFailed
+dbug: MassTransit[0]
+      Bind queue: source: PaymentRequested, destination: PaymentRequested
+dbug: MassTransit[0]
+      Bind queue: source: PaymentCompleted, destination: PaymentCompleted
+dbug: MassTransit[0]
+      Bind exchange: source: ECommerce.Shared.Events:StockReserved, destination: StockReserved
+dbug: MassTransit[0]
+      Bind exchange: source: ECommerce.Shared.Events:StockReservationFailed, destination: StockReservationFailed
+dbug: MassTransit[0]
+      Bind exchange: source: ECommerce.Shared.Events:PaymentCompleted, destination: PaymentCompleted
+dbug: MassTransit[0]
+      Bind exchange: source: ECommerce.Shared.Events:PaymentRequested, destination: PaymentRequested
+dbug: MassTransit[0]
+      Bind exchange: source: ECommerce.Shared.Events:CartCleared, destination: CartCleared
+dbug: MassTransit[0]
+      Bind exchange: source: ECommerce.Shared.Events:PaymentFailed, destination: PaymentFailed
+dbug: MassTransit.ReceiveTransport[0]
+      Consumer Ok: rabbitmq://localhost/CartCleared - amq.ctag-VK6SgqRpLSaQuCQku_fGXA
+dbug: MassTransit.ReceiveTransport[0]
+      Consumer Ok: rabbitmq://localhost/PaymentRequested - amq.ctag-kgfiwEm6Sjyo5U8dY_AHTA
+dbug: MassTransit.ReceiveTransport[0]
+      Consumer Ok: rabbitmq://localhost/PaymentFailed - amq.ctag-eZsWX0UtV2rspGN3g-LIAQ
+dbug: MassTransit.ReceiveTransport[0]
+      Consumer Ok: rabbitmq://localhost/StockReservationFailed - amq.ctag-N8wnSS2FbyJ9Rvgv0QDBrw
+dbug: MassTransit.ReceiveTransport[0]
+      Consumer Ok: rabbitmq://localhost/StockReserved - amq.ctag-zLL1bqowg3hV9ITC9Nc_uA
+dbug: MassTransit.ReceiveTransport[0]
+      Consumer Ok: rabbitmq://localhost/PaymentCompleted - amq.ctag-K6dMxhCYKRSrCg-TXRWy8g
+dbug: MassTransit[0]
+      Endpoint Ready: rabbitmq://localhost/CartCleared
+dbug: MassTransit[0]
+      Endpoint Ready: rabbitmq://localhost/PaymentCompleted
+dbug: MassTransit[0]
+      Endpoint Ready: rabbitmq://localhost/StockReserved
+dbug: MassTransit[0]
+      Endpoint Ready: rabbitmq://localhost/StockReservationFailed
+dbug: MassTransit[0]
+      Endpoint Ready: rabbitmq://localhost/PaymentFailed
+dbug: MassTransit[0]
+      Endpoint Ready: rabbitmq://localhost/PaymentRequested
+info: MassTransit[0]
+      Bus started: rabbitmq://localhost/
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:5185/api/orders/checkout - application/json 32
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Order.API.Controllers.OrderController.Checkout (Order.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Checkout", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Checkout(Order.API.Models.DTOs.CheckoutRequestDto) on controller Order.API.Controllers.OrderController (Order.API).
+info: System.Net.Http.HttpClient.ICartClient.LogicalHandler[100]
+      Start processing HTTP request GET http://localhost:5250/api/cart?userId=27ec435f-d0f5-405d-ba7e-a6cbc97fa2c8
+info: System.Net.Http.HttpClient.ICartClient.ClientHandler[100]
+      Sending HTTP request GET http://localhost:5250/api/cart?userId=27ec435f-d0f5-405d-ba7e-a6cbc97fa2c8
+info: System.Net.Http.HttpClient.ICartClient.ClientHandler[101]
+      Received HTTP response headers after 20.6759ms - 200
+info: System.Net.Http.HttpClient.ICartClient.LogicalHandler[101]
+      End processing HTTP request after 25.4657ms - 200
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 8.0.11 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.11+52a6b9f2ddd23fcabd1c673b4a2e273495129481' with options: None
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'CustomerOrder' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Update[10004]
+      SaveChanges starting for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10800]
+      DetectChanges starting for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10801]
+      DetectChanges completed for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.Update[20700]
+      Executing 3 update commands as a batch.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20005]
+      Creating DbConnection.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20006]
+      Created DbConnection. (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Transaction[20209]
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: Microsoft.EntityFrameworkCore.Database.Transaction[20200]
+      Began transaction with isolation level 'ReadCommitted'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (2ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?' (DbType = Decimal), @p7='?' (DbType = DateTime), @p8='?', @p9='?' (DbType = Guid), @p10='?' (DbType = Guid), @p11='?' (DbType = Guid), @p12='?', @p13='?' (DbType = Int32), @p14='?' (DbType = Decimal), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?', @p19='?' (DbType = Int32), @p20='?' (DbType = Decimal)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Orders" ("Id", "CreatedAt", "CurrentSagaStep", "FailureReason", "ShippingAddress", "Status", "TotalAmount", "UpdatedAt", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+      INSERT INTO "OrderItems" ("Id", "OrderId", "ProductId", "ProductName", "Quantity", "UnitPrice")
+      VALUES (@p9, @p10, @p11, @p12, @p13, @p14);
+      INSERT INTO "OrderItems" ("Id", "OrderId", "ProductId", "ProductName", "Quantity", "UnitPrice")
+      VALUES (@p15, @p16, @p17, @p18, @p19, @p20);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (42ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?' (DbType = Decimal), @p7='?' (DbType = DateTime), @p8='?', @p9='?' (DbType = Guid), @p10='?' (DbType = Guid), @p11='?' (DbType = Guid), @p12='?', @p13='?' (DbType = Int32), @p14='?' (DbType = Decimal), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?', @p19='?' (DbType = Int32), @p20='?' (DbType = Decimal)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Orders" ("Id", "CreatedAt", "CurrentSagaStep", "FailureReason", "ShippingAddress", "Status", "TotalAmount", "UpdatedAt", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+      INSERT INTO "OrderItems" ("Id", "OrderId", "ProductId", "ProductName", "Quantity", "UnitPrice")
+      VALUES (@p9, @p10, @p11, @p12, @p13, @p14);
+      INSERT INTO "OrderItems" ("Id", "OrderId", "ProductId", "ProductName", "Quantity", "UnitPrice")
+      VALUES (@p15, @p16, @p17, @p18, @p19, @p20);
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 2ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Transaction[20210]
+      Committing transaction.
+dbug: Microsoft.EntityFrameworkCore.Database.Transaction[20202]
+      Committed transaction.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Transaction[20204]
+      Disposing transaction.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An entity of type 'CustomerOrder' tracked by 'AppDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An entity of type 'OrderItem' tracked by 'AppDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An entity of type 'OrderItem' tracked by 'AppDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Update[10005]
+      SaveChanges completed for 'AppDbContext' with 3 entities written to the database.
+dbug: Microsoft.EntityFrameworkCore.Query[10111]
+      Compiling query expression: 
+      'DbSet<CustomerOrder>()
+          .Include(o => o.Items)
+          .FirstOrDefault(o => o.Id == __id_0)'
+dbug: Microsoft.EntityFrameworkCore.Query[10112]
+      Including navigation: 'CustomerOrder.Items'.
+dbug: Microsoft.EntityFrameworkCore.Query[10107]
+      Generated query execution expression: 
+      'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<CustomerOrder>(
+          asyncEnumerable: new SingleQueryingEnumerable<CustomerOrder>(
+              (RelationalQueryContext)queryContext, 
+              RelationalCommandCache.QueryExpression(
+                  Client Projections:
+                      0 -> Dictionary<IProperty, int> { [Property: CustomerOrder.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: CustomerOrder.CreatedAt (DateTime) Required, 1], [Property: CustomerOrder.CurrentSagaStep (string) MaxLength(100), 2], [Property: CustomerOrder.FailureReason (string) MaxLength(500), 3], [Property: CustomerOrder.ShippingAddress (string) Required MaxLength(500), 4], [Property: CustomerOrder.Status (OrderStatus) Required, 5], [Property: CustomerOrder.TotalAmount (decimal) Required, 6], [Property: CustomerOrder.UpdatedAt (DateTime?), 7], [Property: CustomerOrder.UserId (string) Required Index MaxLength(450), 8] }
+                      1 -> 0
+                      2 -> Dictionary<IProperty, int> { [Property: OrderItem.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 9], [Property: OrderItem.OrderId (Guid) Required FK Index, 10], [Property: OrderItem.ProductId (Guid) Required, 11], [Property: OrderItem.ProductName (string) Required MaxLength(200), 12], [Property: OrderItem.Quantity (int) Required, 13], [Property: OrderItem.UnitPrice (decimal) Required, 14] }
+                      3 -> 9
+                  SELECT t.Id, t.CreatedAt, t.CurrentSagaStep, t.FailureReason, t.ShippingAddress, t.Status, t.TotalAmount, t.UpdatedAt, t.UserId, o0.Id, o0.OrderId, o0.ProductId, o0.ProductName, o0.Quantity, o0.UnitPrice
+                  FROM 
+                  (
+                      SELECT TOP(1) o.Id, o.CreatedAt, o.CurrentSagaStep, o.FailureReason, o.ShippingAddress, o.Status, o.TotalAmount, o.UpdatedAt, o.UserId
+                      FROM Orders AS o
+                      WHERE o.Id == @__id_0
+                  ) AS t
+                  LEFT JOIN OrderItems AS o0 ON t.Id == o0.OrderId
+                  ORDER BY t.Id ASC), 
+              null, 
+              Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CustomerOrder>, 
+              Order.API.Infrastructure.Data.AppDbContext, 
+              False, 
+              False, 
+              True
+          ), 
+          cancellationToken: queryContext.CancellationToken)'
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT t."Id", t."CreatedAt", t."CurrentSagaStep", t."FailureReason", t."ShippingAddress", t."Status", t."TotalAmount", t."UpdatedAt", t."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM (
+          SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId"
+          FROM "Orders" AS o
+          WHERE o."Id" = @__id_0
+          LIMIT 1
+      ) AS t
+      LEFT JOIN "OrderItems" AS o0 ON t."Id" = o0."OrderId"
+      ORDER BY t."Id"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT t."Id", t."CreatedAt", t."CurrentSagaStep", t."FailureReason", t."ShippingAddress", t."Status", t."TotalAmount", t."UpdatedAt", t."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM (
+          SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId"
+          FROM "Orders" AS o
+          WHERE o."Id" = @__id_0
+          LIMIT 1
+      ) AS t
+      LEFT JOIN "OrderItems" AS o0 ON t."Id" = o0."OrderId"
+      ORDER BY t."Id"
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 2ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An entity of type 'CustomerOrder' tracked by 'AppDbContext' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Update[10004]
+      SaveChanges starting for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10800]
+      DetectChanges starting for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10801]
+      DetectChanges completed for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@p8='?' (DbType = Guid), @p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Decimal), @p6='?' (DbType = DateTime), @p7='?'], CommandType='Text', CommandTimeout='30']
+      UPDATE "Orders" SET "CreatedAt" = @p0, "CurrentSagaStep" = @p1, "FailureReason" = @p2, "ShippingAddress" = @p3, "Status" = @p4, "TotalAmount" = @p5, "UpdatedAt" = @p6, "UserId" = @p7
+      WHERE "Id" = @p8;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p8='?' (DbType = Guid), @p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Decimal), @p6='?' (DbType = DateTime), @p7='?'], CommandType='Text', CommandTimeout='30']
+      UPDATE "Orders" SET "CreatedAt" = @p0, "CurrentSagaStep" = @p1, "FailureReason" = @p2, "ShippingAddress" = @p3, "Status" = @p4, "TotalAmount" = @p5, "UpdatedAt" = @p6, "UserId" = @p7
+      WHERE "Id" = @p8;
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 0ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An entity of type 'CustomerOrder' tracked by 'AppDbContext' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Update[10005]
+      SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+dbug: MassTransit.SendTransport[0]
+      Declare exchange: name: ECommerce.Shared.Events:StockReservationRequested, type: fanout, durable
+dbug: MassTransit.Messages[0]
+      SEND rabbitmq://localhost/ECommerce.Shared.Events:StockReservationRequested 61600000-d004-76c9-12ce-08df02f2f119 ECommerce.Shared.Events.StockReservationRequested
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing AcceptedResult, writing value of type 'Order.API.Models.DTOs.OrderResponseDto'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action Order.API.Controllers.OrderController.Checkout (Order.API) in 423.3074ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Order.API.Controllers.OrderController.Checkout (Order.API)'
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10407]
+      'AppDbContext' disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20007]
+      Disposing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20008]
+      Disposed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost:5185/api/orders/checkout - 202 - application/json;+charset=utf-8 493.8147ms
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 8.0.11 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.11+52a6b9f2ddd23fcabd1c673b4a2e273495129481' with options: None
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20005]
+      Creating DbConnection.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20006]
+      Created DbConnection. (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT t."Id", t."CreatedAt", t."CurrentSagaStep", t."FailureReason", t."ShippingAddress", t."Status", t."TotalAmount", t."UpdatedAt", t."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM (
+          SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId"
+          FROM "Orders" AS o
+          WHERE o."Id" = @__id_0
+          LIMIT 1
+      ) AS t
+      LEFT JOIN "OrderItems" AS o0 ON t."Id" = o0."OrderId"
+      ORDER BY t."Id"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT t."Id", t."CreatedAt", t."CurrentSagaStep", t."FailureReason", t."ShippingAddress", t."Status", t."TotalAmount", t."UpdatedAt", t."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM (
+          SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId"
+          FROM "Orders" AS o
+          WHERE o."Id" = @__id_0
+          LIMIT 1
+      ) AS t
+      LEFT JOIN "OrderItems" AS o0 ON t."Id" = o0."OrderId"
+      ORDER BY t."Id"
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'CustomerOrder' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 3ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An entity of type 'CustomerOrder' tracked by 'AppDbContext' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Update[10004]
+      SaveChanges starting for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10800]
+      DetectChanges starting for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10801]
+      DetectChanges completed for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@p8='?' (DbType = Guid), @p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Decimal), @p6='?' (DbType = DateTime), @p7='?'], CommandType='Text', CommandTimeout='30']
+      UPDATE "Orders" SET "CreatedAt" = @p0, "CurrentSagaStep" = @p1, "FailureReason" = @p2, "ShippingAddress" = @p3, "Status" = @p4, "TotalAmount" = @p5, "UpdatedAt" = @p6, "UserId" = @p7
+      WHERE "Id" = @p8;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p8='?' (DbType = Guid), @p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Decimal), @p6='?' (DbType = DateTime), @p7='?'], CommandType='Text', CommandTimeout='30']
+      UPDATE "Orders" SET "CreatedAt" = @p0, "CurrentSagaStep" = @p1, "FailureReason" = @p2, "ShippingAddress" = @p3, "Status" = @p4, "TotalAmount" = @p5, "UpdatedAt" = @p6, "UserId" = @p7
+      WHERE "Id" = @p8;
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 0ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An entity of type 'CustomerOrder' tracked by 'AppDbContext' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Update[10005]
+      SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+dbug: MassTransit.ReceiveTransport[0]
+      Declare exchange: name: ECommerce.Shared.Events:PaymentRequested, type: fanout, durable
+dbug: MassTransit.Messages[0]
+      SEND rabbitmq://localhost/ECommerce.Shared.Events:PaymentRequested 61600000-d004-76c9-e646-08df02f2f145 ECommerce.Shared.Events.PaymentRequested
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10407]
+      'AppDbContext' disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20007]
+      Disposing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20008]
+      Disposed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: MassTransit.Messages[0]
+      RECEIVE rabbitmq://localhost/StockReserved 6c600000-d004-76c9-8af2-08df02f2f13b ECommerce.Shared.Events.StockReserved Order.API.Consumers.StockReservedConsumer(00:00:00.0393635)
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 POST http://localhost:5185/api/orders/checkout - application/json 32
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Order.API.Controllers.OrderController.Checkout (Order.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "Checkout", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Checkout(Order.API.Models.DTOs.CheckoutRequestDto) on controller Order.API.Controllers.OrderController (Order.API).
+info: System.Net.Http.HttpClient.ICartClient.LogicalHandler[100]
+      Start processing HTTP request GET http://localhost:5250/api/cart?userId=27ec435f-d0f5-405d-ba7e-a6cbc97fa2c8
+info: System.Net.Http.HttpClient.ICartClient.ClientHandler[100]
+      Sending HTTP request GET http://localhost:5250/api/cart?userId=27ec435f-d0f5-405d-ba7e-a6cbc97fa2c8
+info: System.Net.Http.HttpClient.ICartClient.ClientHandler[101]
+      Received HTTP response headers after 12.5692ms - 200
+info: System.Net.Http.HttpClient.ICartClient.LogicalHandler[101]
+      End processing HTTP request after 12.9024ms - 200
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 8.0.11 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.11+52a6b9f2ddd23fcabd1c673b4a2e273495129481' with options: None
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'CustomerOrder' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Update[10004]
+      SaveChanges starting for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10800]
+      DetectChanges starting for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10801]
+      DetectChanges completed for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.Update[20700]
+      Executing 3 update commands as a batch.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20005]
+      Creating DbConnection.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20006]
+      Created DbConnection. (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Transaction[20209]
+      Beginning transaction with isolation level 'Unspecified'.
+dbug: Microsoft.EntityFrameworkCore.Database.Transaction[20200]
+      Began transaction with isolation level 'ReadCommitted'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?' (DbType = Decimal), @p7='?' (DbType = DateTime), @p8='?', @p9='?' (DbType = Guid), @p10='?' (DbType = Guid), @p11='?' (DbType = Guid), @p12='?', @p13='?' (DbType = Int32), @p14='?' (DbType = Decimal), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?', @p19='?' (DbType = Int32), @p20='?' (DbType = Decimal)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Orders" ("Id", "CreatedAt", "CurrentSagaStep", "FailureReason", "ShippingAddress", "Status", "TotalAmount", "UpdatedAt", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+      INSERT INTO "OrderItems" ("Id", "OrderId", "ProductId", "ProductName", "Quantity", "UnitPrice")
+      VALUES (@p9, @p10, @p11, @p12, @p13, @p14);
+      INSERT INTO "OrderItems" ("Id", "OrderId", "ProductId", "ProductName", "Quantity", "UnitPrice")
+      VALUES (@p15, @p16, @p17, @p18, @p19, @p20);
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?' (DbType = Decimal), @p7='?' (DbType = DateTime), @p8='?', @p9='?' (DbType = Guid), @p10='?' (DbType = Guid), @p11='?' (DbType = Guid), @p12='?', @p13='?' (DbType = Int32), @p14='?' (DbType = Decimal), @p15='?' (DbType = Guid), @p16='?' (DbType = Guid), @p17='?' (DbType = Guid), @p18='?', @p19='?' (DbType = Int32), @p20='?' (DbType = Decimal)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Orders" ("Id", "CreatedAt", "CurrentSagaStep", "FailureReason", "ShippingAddress", "Status", "TotalAmount", "UpdatedAt", "UserId")
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+      INSERT INTO "OrderItems" ("Id", "OrderId", "ProductId", "ProductName", "Quantity", "UnitPrice")
+      VALUES (@p9, @p10, @p11, @p12, @p13, @p14);
+      INSERT INTO "OrderItems" ("Id", "OrderId", "ProductId", "ProductName", "Quantity", "UnitPrice")
+      VALUES (@p15, @p16, @p17, @p18, @p19, @p20);
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 0ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Transaction[20210]
+      Committing transaction.
+dbug: Microsoft.EntityFrameworkCore.Database.Transaction[20202]
+      Committed transaction.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Transaction[20204]
+      Disposing transaction.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An entity of type 'CustomerOrder' tracked by 'AppDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An entity of type 'OrderItem' tracked by 'AppDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An entity of type 'OrderItem' tracked by 'AppDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Update[10005]
+      SaveChanges completed for 'AppDbContext' with 3 entities written to the database.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT t."Id", t."CreatedAt", t."CurrentSagaStep", t."FailureReason", t."ShippingAddress", t."Status", t."TotalAmount", t."UpdatedAt", t."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM (
+          SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId"
+          FROM "Orders" AS o
+          WHERE o."Id" = @__id_0
+          LIMIT 1
+      ) AS t
+      LEFT JOIN "OrderItems" AS o0 ON t."Id" = o0."OrderId"
+      ORDER BY t."Id"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT t."Id", t."CreatedAt", t."CurrentSagaStep", t."FailureReason", t."ShippingAddress", t."Status", t."TotalAmount", t."UpdatedAt", t."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM (
+          SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId"
+          FROM "Orders" AS o
+          WHERE o."Id" = @__id_0
+          LIMIT 1
+      ) AS t
+      LEFT JOIN "OrderItems" AS o0 ON t."Id" = o0."OrderId"
+      ORDER BY t."Id"
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 0ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An entity of type 'CustomerOrder' tracked by 'AppDbContext' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Update[10004]
+      SaveChanges starting for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10800]
+      DetectChanges starting for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10801]
+      DetectChanges completed for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@p8='?' (DbType = Guid), @p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Decimal), @p6='?' (DbType = DateTime), @p7='?'], CommandType='Text', CommandTimeout='30']
+      UPDATE "Orders" SET "CreatedAt" = @p0, "CurrentSagaStep" = @p1, "FailureReason" = @p2, "ShippingAddress" = @p3, "Status" = @p4, "TotalAmount" = @p5, "UpdatedAt" = @p6, "UserId" = @p7
+      WHERE "Id" = @p8;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (2ms) [Parameters=[@p8='?' (DbType = Guid), @p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Decimal), @p6='?' (DbType = DateTime), @p7='?'], CommandType='Text', CommandTimeout='30']
+      UPDATE "Orders" SET "CreatedAt" = @p0, "CurrentSagaStep" = @p1, "FailureReason" = @p2, "ShippingAddress" = @p3, "Status" = @p4, "TotalAmount" = @p5, "UpdatedAt" = @p6, "UserId" = @p7
+      WHERE "Id" = @p8;
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 0ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An entity of type 'CustomerOrder' tracked by 'AppDbContext' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Update[10005]
+      SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+dbug: MassTransit.Messages[0]
+      SEND rabbitmq://localhost/ECommerce.Shared.Events:StockReservationRequested 61600000-d004-76c9-d14a-08df02f2f5a7 ECommerce.Shared.Events.StockReservationRequested
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing AcceptedResult, writing value of type 'Order.API.Models.DTOs.OrderResponseDto'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action Order.API.Controllers.OrderController.Checkout (Order.API) in 62.8908ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Order.API.Controllers.OrderController.Checkout (Order.API)'
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10407]
+      'AppDbContext' disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20007]
+      Disposing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20008]
+      Disposed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 POST http://localhost:5185/api/orders/checkout - 202 - application/json;+charset=utf-8 73.4817ms
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 8.0.11 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.11+52a6b9f2ddd23fcabd1c673b4a2e273495129481' with options: None
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20005]
+      Creating DbConnection.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20006]
+      Created DbConnection. (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT t."Id", t."CreatedAt", t."CurrentSagaStep", t."FailureReason", t."ShippingAddress", t."Status", t."TotalAmount", t."UpdatedAt", t."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM (
+          SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId"
+          FROM "Orders" AS o
+          WHERE o."Id" = @__id_0
+          LIMIT 1
+      ) AS t
+      LEFT JOIN "OrderItems" AS o0 ON t."Id" = o0."OrderId"
+      ORDER BY t."Id"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT t."Id", t."CreatedAt", t."CurrentSagaStep", t."FailureReason", t."ShippingAddress", t."Status", t."TotalAmount", t."UpdatedAt", t."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM (
+          SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId"
+          FROM "Orders" AS o
+          WHERE o."Id" = @__id_0
+          LIMIT 1
+      ) AS t
+      LEFT JOIN "OrderItems" AS o0 ON t."Id" = o0."OrderId"
+      ORDER BY t."Id"
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'CustomerOrder' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 0ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An entity of type 'CustomerOrder' tracked by 'AppDbContext' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Update[10004]
+      SaveChanges starting for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10800]
+      DetectChanges starting for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10801]
+      DetectChanges completed for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@p8='?' (DbType = Guid), @p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Decimal), @p6='?' (DbType = DateTime), @p7='?'], CommandType='Text', CommandTimeout='30']
+      UPDATE "Orders" SET "CreatedAt" = @p0, "CurrentSagaStep" = @p1, "FailureReason" = @p2, "ShippingAddress" = @p3, "Status" = @p4, "TotalAmount" = @p5, "UpdatedAt" = @p6, "UserId" = @p7
+      WHERE "Id" = @p8;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p8='?' (DbType = Guid), @p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Decimal), @p6='?' (DbType = DateTime), @p7='?'], CommandType='Text', CommandTimeout='30']
+      UPDATE "Orders" SET "CreatedAt" = @p0, "CurrentSagaStep" = @p1, "FailureReason" = @p2, "ShippingAddress" = @p3, "Status" = @p4, "TotalAmount" = @p5, "UpdatedAt" = @p6, "UserId" = @p7
+      WHERE "Id" = @p8;
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 0ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An entity of type 'CustomerOrder' tracked by 'AppDbContext' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Update[10005]
+      SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+dbug: MassTransit.Messages[0]
+      SEND rabbitmq://localhost/ECommerce.Shared.Events:PaymentRequested 61600000-d004-76c9-d966-08df02f2f5b0 ECommerce.Shared.Events.PaymentRequested
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10407]
+      'AppDbContext' disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20007]
+      Disposing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20008]
+      Disposed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: MassTransit.Messages[0]
+      RECEIVE rabbitmq://localhost/StockReserved 6c600000-d004-76c9-e844-08df02f2f5af ECommerce.Shared.Events.StockReserved Order.API.Consumers.StockReservedConsumer(00:00:00.0058075)
+dbug: MassTransit.ReceiveTransport[0]
+      Declare exchange: name: ECommerce.Shared.Events:PaymentCompleted, type: fanout, durable
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 8.0.11 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.11+52a6b9f2ddd23fcabd1c673b4a2e273495129481' with options: None
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20005]
+      Creating DbConnection.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20006]
+      Created DbConnection. (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT t."Id", t."CreatedAt", t."CurrentSagaStep", t."FailureReason", t."ShippingAddress", t."Status", t."TotalAmount", t."UpdatedAt", t."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM (
+          SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId"
+          FROM "Orders" AS o
+          WHERE o."Id" = @__id_0
+          LIMIT 1
+      ) AS t
+      LEFT JOIN "OrderItems" AS o0 ON t."Id" = o0."OrderId"
+      ORDER BY t."Id"
+dbug: MassTransit.Messages[0]
+      SEND rabbitmq://localhost/ECommerce.Shared.Events:PaymentCompleted 61600000-d004-76c9-ace2-08df02f2f5b1 ECommerce.Shared.Events.PaymentCompleted
+dbug: MassTransit.Messages[0]
+      RECEIVE rabbitmq://localhost/PaymentRequested 61600000-d004-76c9-d966-08df02f2f5b0 ECommerce.Shared.Events.PaymentRequested Order.API.Consumers.PaymentRequestedConsumer(00:00:00.0064067)
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT t."Id", t."CreatedAt", t."CurrentSagaStep", t."FailureReason", t."ShippingAddress", t."Status", t."TotalAmount", t."UpdatedAt", t."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM (
+          SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId"
+          FROM "Orders" AS o
+          WHERE o."Id" = @__id_0
+          LIMIT 1
+      ) AS t
+      LEFT JOIN "OrderItems" AS o0 ON t."Id" = o0."OrderId"
+      ORDER BY t."Id"
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'CustomerOrder' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 0ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An entity of type 'CustomerOrder' tracked by 'AppDbContext' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Update[10004]
+      SaveChanges starting for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10800]
+      DetectChanges starting for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10801]
+      DetectChanges completed for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@p8='?' (DbType = Guid), @p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Decimal), @p6='?' (DbType = DateTime), @p7='?'], CommandType='Text', CommandTimeout='30']
+      UPDATE "Orders" SET "CreatedAt" = @p0, "CurrentSagaStep" = @p1, "FailureReason" = @p2, "ShippingAddress" = @p3, "Status" = @p4, "TotalAmount" = @p5, "UpdatedAt" = @p6, "UserId" = @p7
+      WHERE "Id" = @p8;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@p8='?' (DbType = Guid), @p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Decimal), @p6='?' (DbType = DateTime), @p7='?'], CommandType='Text', CommandTimeout='30']
+      UPDATE "Orders" SET "CreatedAt" = @p0, "CurrentSagaStep" = @p1, "FailureReason" = @p2, "ShippingAddress" = @p3, "Status" = @p4, "TotalAmount" = @p5, "UpdatedAt" = @p6, "UserId" = @p7
+      WHERE "Id" = @p8;
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 0ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An entity of type 'CustomerOrder' tracked by 'AppDbContext' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Update[10005]
+      SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+dbug: MassTransit.ReceiveTransport[0]
+      Declare exchange: name: ECommerce.Shared.Events:CartClearRequested, type: fanout, durable
+dbug: MassTransit.Messages[0]
+      SEND rabbitmq://localhost/ECommerce.Shared.Events:CartClearRequested 61600000-d004-76c9-d5d6-08df02f2f5b2 ECommerce.Shared.Events.CartClearRequested
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10407]
+      'AppDbContext' disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20007]
+      Disposing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20008]
+      Disposed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: MassTransit.Messages[0]
+      RECEIVE rabbitmq://localhost/PaymentCompleted 61600000-d004-76c9-ace2-08df02f2f5b1 ECommerce.Shared.Events.PaymentCompleted Order.API.Consumers.PaymentCompletedConsumer(00:00:00.0107974)
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 8.0.11 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.11+52a6b9f2ddd23fcabd1c673b4a2e273495129481' with options: None
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20005]
+      Creating DbConnection.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20006]
+      Created DbConnection. (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT t."Id", t."CreatedAt", t."CurrentSagaStep", t."FailureReason", t."ShippingAddress", t."Status", t."TotalAmount", t."UpdatedAt", t."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM (
+          SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId"
+          FROM "Orders" AS o
+          WHERE o."Id" = @__id_0
+          LIMIT 1
+      ) AS t
+      LEFT JOIN "OrderItems" AS o0 ON t."Id" = o0."OrderId"
+      ORDER BY t."Id"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT t."Id", t."CreatedAt", t."CurrentSagaStep", t."FailureReason", t."ShippingAddress", t."Status", t."TotalAmount", t."UpdatedAt", t."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM (
+          SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId"
+          FROM "Orders" AS o
+          WHERE o."Id" = @__id_0
+          LIMIT 1
+      ) AS t
+      LEFT JOIN "OrderItems" AS o0 ON t."Id" = o0."OrderId"
+      ORDER BY t."Id"
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'CustomerOrder' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 0ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An entity of type 'CustomerOrder' tracked by 'AppDbContext' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Update[10004]
+      SaveChanges starting for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10800]
+      DetectChanges starting for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10801]
+      DetectChanges completed for 'AppDbContext'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@p8='?' (DbType = Guid), @p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Decimal), @p6='?' (DbType = DateTime), @p7='?'], CommandType='Text', CommandTimeout='30']
+      UPDATE "Orders" SET "CreatedAt" = @p0, "CurrentSagaStep" = @p1, "FailureReason" = @p2, "ShippingAddress" = @p3, "Status" = @p4, "TotalAmount" = @p5, "UpdatedAt" = @p6, "UserId" = @p7
+      WHERE "Id" = @p8;
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[@p8='?' (DbType = Guid), @p0='?' (DbType = DateTime), @p1='?', @p2='?', @p3='?', @p4='?', @p5='?' (DbType = Decimal), @p6='?' (DbType = DateTime), @p7='?'], CommandType='Text', CommandTimeout='30']
+      UPDATE "Orders" SET "CreatedAt" = @p0, "CurrentSagaStep" = @p1, "FailureReason" = @p2, "ShippingAddress" = @p3, "Status" = @p4, "TotalAmount" = @p5, "UpdatedAt" = @p6, "UserId" = @p7
+      WHERE "Id" = @p8;
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 0ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10807]
+      An entity of type 'CustomerOrder' tracked by 'AppDbContext' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Update[10005]
+      SaveChanges completed for 'AppDbContext' with 1 entities written to the database.
+dbug: MassTransit.ReceiveTransport[0]
+      Declare exchange: name: ECommerce.Shared.Events:OrderConfirmed, type: fanout, durable
+dbug: MassTransit.Messages[0]
+      SEND rabbitmq://localhost/ECommerce.Shared.Events:OrderConfirmed 61600000-d004-76c9-4b60-08df02f2f5c2 ECommerce.Shared.Events.OrderConfirmed
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10407]
+      'AppDbContext' disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20007]
+      Disposing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20008]
+      Disposed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+dbug: MassTransit.Messages[0]
+      RECEIVE rabbitmq://localhost/CartCleared 5e600000-d004-76c9-a592-08df02f2f5bd ECommerce.Shared.Events.CartCleared Order.API.Consumers.CartClearedConsumer(00:00:00.0168524)
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:5185/api/orders - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Order.API.Controllers.OrderController.GetMyOrders (Order.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetMyOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyOrders() on controller Order.API.Controllers.OrderController (Order.API).
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 8.0.11 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.11+52a6b9f2ddd23fcabd1c673b4a2e273495129481' with options: None
+dbug: Microsoft.EntityFrameworkCore.Query[10111]
+      Compiling query expression: 
+      'DbSet<CustomerOrder>()
+          .Include(o => o.Items)
+          .Where(o => o.UserId == __userId_0)
+          .OrderByDescending(o => o.CreatedAt)'
+dbug: Microsoft.EntityFrameworkCore.Query[10112]
+      Including navigation: 'CustomerOrder.Items'.
+dbug: Microsoft.EntityFrameworkCore.Query[10107]
+      Generated query execution expression: 
+      'queryContext => new SingleQueryingEnumerable<CustomerOrder>(
+          (RelationalQueryContext)queryContext, 
+          RelationalCommandCache.QueryExpression(
+              Client Projections:
+                  0 -> Dictionary<IProperty, int> { [Property: CustomerOrder.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: CustomerOrder.CreatedAt (DateTime) Required, 1], [Property: CustomerOrder.CurrentSagaStep (string) MaxLength(100), 2], [Property: CustomerOrder.FailureReason (string) MaxLength(500), 3], [Property: CustomerOrder.ShippingAddress (string) Required MaxLength(500), 4], [Property: CustomerOrder.Status (OrderStatus) Required, 5], [Property: CustomerOrder.TotalAmount (decimal) Required, 6], [Property: CustomerOrder.UpdatedAt (DateTime?), 7], [Property: CustomerOrder.UserId (string) Required Index MaxLength(450), 8] }
+                  1 -> 0
+                  2 -> Dictionary<IProperty, int> { [Property: OrderItem.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 9], [Property: OrderItem.OrderId (Guid) Required FK Index, 10], [Property: OrderItem.ProductId (Guid) Required, 11], [Property: OrderItem.ProductName (string) Required MaxLength(200), 12], [Property: OrderItem.Quantity (int) Required, 13], [Property: OrderItem.UnitPrice (decimal) Required, 14] }
+                  3 -> 9
+              SELECT o.Id, o.CreatedAt, o.CurrentSagaStep, o.FailureReason, o.ShippingAddress, o.Status, o.TotalAmount, o.UpdatedAt, o.UserId, o0.Id, o0.OrderId, o0.ProductId, o0.ProductName, o0.Quantity, o0.UnitPrice
+              FROM Orders AS o
+              LEFT JOIN OrderItems AS o0 ON o.Id == o0.OrderId
+              WHERE o.UserId == @__userId_0
+              ORDER BY o.CreatedAt DESC, o.Id ASC), 
+          null, 
+          Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CustomerOrder>, 
+          Order.API.Infrastructure.Data.AppDbContext, 
+          False, 
+          False, 
+          True
+      )'
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20005]
+      Creating DbConnection.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20006]
+      Created DbConnection. (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM "Orders" AS o
+      LEFT JOIN "OrderItems" AS o0 ON o."Id" = o0."OrderId"
+      WHERE o."UserId" = @__userId_0
+      ORDER BY o."CreatedAt" DESC, o."Id"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (16ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM "Orders" AS o
+      LEFT JOIN "OrderItems" AS o0 ON o."Id" = o0."OrderId"
+      WHERE o."UserId" = @__userId_0
+      ORDER BY o."CreatedAt" DESC, o."Id"
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'CustomerOrder' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'CustomerOrder' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 5ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Order.API.Models.DTOs.OrderResponseDto, Order.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action Order.API.Controllers.OrderController.GetMyOrders (Order.API) in 36.8657ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Order.API.Controllers.OrderController.GetMyOrders (Order.API)'
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10407]
+      'AppDbContext' disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20007]
+      Disposing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20008]
+      Disposed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost:5185/api/orders - 200 - application/json;+charset=utf-8 58.7797ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:5185/api/orders - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Order.API.Controllers.OrderController.GetMyOrders (Order.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetMyOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyOrders() on controller Order.API.Controllers.OrderController (Order.API).
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 8.0.11 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.11+52a6b9f2ddd23fcabd1c673b4a2e273495129481' with options: None
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20005]
+      Creating DbConnection.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20006]
+      Created DbConnection. (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM "Orders" AS o
+      LEFT JOIN "OrderItems" AS o0 ON o."Id" = o0."OrderId"
+      WHERE o."UserId" = @__userId_0
+      ORDER BY o."CreatedAt" DESC, o."Id"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM "Orders" AS o
+      LEFT JOIN "OrderItems" AS o0 ON o."Id" = o0."OrderId"
+      WHERE o."UserId" = @__userId_0
+      ORDER BY o."CreatedAt" DESC, o."Id"
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'CustomerOrder' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'CustomerOrder' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 0ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Order.API.Models.DTOs.OrderResponseDto, Order.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action Order.API.Controllers.OrderController.GetMyOrders (Order.API) in 2.6517ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Order.API.Controllers.OrderController.GetMyOrders (Order.API)'
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10407]
+      'AppDbContext' disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20007]
+      Disposing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20008]
+      Disposed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost:5185/api/orders - 200 - application/json;+charset=utf-8 3.1764ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:5185/api/orders - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Order.API.Controllers.OrderController.GetMyOrders (Order.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetMyOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyOrders() on controller Order.API.Controllers.OrderController (Order.API).
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 8.0.11 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.11+52a6b9f2ddd23fcabd1c673b4a2e273495129481' with options: None
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20005]
+      Creating DbConnection.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20006]
+      Created DbConnection. (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM "Orders" AS o
+      LEFT JOIN "OrderItems" AS o0 ON o."Id" = o0."OrderId"
+      WHERE o."UserId" = @__userId_0
+      ORDER BY o."CreatedAt" DESC, o."Id"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (6ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM "Orders" AS o
+      LEFT JOIN "OrderItems" AS o0 ON o."Id" = o0."OrderId"
+      WHERE o."UserId" = @__userId_0
+      ORDER BY o."CreatedAt" DESC, o."Id"
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'CustomerOrder' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'CustomerOrder' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 1ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Order.API.Models.DTOs.OrderResponseDto, Order.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action Order.API.Controllers.OrderController.GetMyOrders (Order.API) in 18.1522ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Order.API.Controllers.OrderController.GetMyOrders (Order.API)'
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10407]
+      'AppDbContext' disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20007]
+      Disposing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20008]
+      Disposed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost:5185/api/orders - 200 - application/json;+charset=utf-8 30.2942ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/1.1 GET http://localhost:5185/api/orders - - -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'Order.API.Controllers.OrderController.GetMyOrders (Order.API)'
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[102]
+      Route matched with {action = "GetMyOrders", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMyOrders() on controller Order.API.Controllers.OrderController (Order.API).
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10403]
+      Entity Framework Core 8.0.11 initialized 'AppDbContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:8.0.11+52a6b9f2ddd23fcabd1c673b4a2e273495129481' with options: None
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20005]
+      Creating DbConnection.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20006]
+      Created DbConnection. (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20000]
+      Opening connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20001]
+      Opened connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20103]
+      Creating DbCommand for 'ExecuteReader'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20104]
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20106]
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20100]
+      Executing DbCommand [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM "Orders" AS o
+      LEFT JOIN "OrderItems" AS o0 ON o."Id" = o0."OrderId"
+      WHERE o."UserId" = @__userId_0
+      ORDER BY o."CreatedAt" DESC, o."Id"
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='Text', CommandTimeout='30']
+      SELECT o."Id", o."CreatedAt", o."CurrentSagaStep", o."FailureReason", o."ShippingAddress", o."Status", o."TotalAmount", o."UpdatedAt", o."UserId", o0."Id", o0."OrderId", o0."ProductId", o0."ProductName", o0."Quantity", o0."UnitPrice"
+      FROM "Orders" AS o
+      LEFT JOIN "OrderItems" AS o0 ON o."Id" = o0."OrderId"
+      WHERE o."UserId" = @__userId_0
+      ORDER BY o."CreatedAt" DESC, o."Id"
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'CustomerOrder' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'CustomerOrder' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.ChangeTracking[10806]
+      Context 'AppDbContext' started tracking 'OrderItem' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20301]
+      Closing data reader to 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Command[20300]
+      A data reader for 'order_db' on server 'tcp://localhost:5436' is being disposed after spending 0ms reading results.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20002]
+      Closing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20003]
+      Closed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Order.API.Models.DTOs.OrderResponseDto, Order.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker[105]
+      Executed action Order.API.Controllers.OrderController.GetMyOrders (Order.API) in 2.6441ms
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'Order.API.Controllers.OrderController.GetMyOrders (Order.API)'
+dbug: Microsoft.EntityFrameworkCore.Infrastructure[10407]
+      'AppDbContext' disposed.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20007]
+      Disposing connection to database 'order_db' on server 'tcp://localhost:5436'.
+dbug: Microsoft.EntityFrameworkCore.Database.Connection[20008]
+      Disposed connection to database 'order_db' on server 'tcp://localhost:5436' (0ms).
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/1.1 GET http://localhost:5185/api/orders - 200 - application/json;+charset=utf-8 3.2937ms
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[103]
+      HttpMessageHandler expired after 120000ms for client 'ICartClient'
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.8273ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.1132ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.1157ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.6761ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.098ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.056ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0805ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0922ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0866ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.3904ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.1056ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0595ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.1084ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.123ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0813ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.105ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.057ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0315ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.1022ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0884ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0503ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.089ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.1071ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0562ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.7391ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.1073ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.109ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 1.4825ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0572ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0507ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.1191ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0242ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0663ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0277ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.025ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.006ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0817ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0162ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.1628ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.1503ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.119ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0357ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0647ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0375ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0218ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.3434ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0513ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0587ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0687ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0651ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0298ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0178ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0347ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0226ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0335ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0343ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0348ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.5476ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.1162ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0382ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0895ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0017ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0015ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0015ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0008ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0005ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0015ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0922ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0024ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0005ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0018ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0019ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0096ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0023ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.001ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0084ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0016ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0027ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0017ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.001ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0019ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0135ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0019ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0018ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0012ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0013ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0017ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0014ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0007ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0013ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0012ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0012ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0042ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0012ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0015ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0019ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0007ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0015ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0015ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0022ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.001ms - processed: 0 items - remaining: 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[100]
+      Starting HttpMessageHandler cleanup cycle with 1 items
+dbug: Microsoft.Extensions.Http.DefaultHttpClientFactory[101]
+      Ending HttpMessageHandler cleanup cycle after 0.0006ms - processed: 0 items - remaining: 1 items
