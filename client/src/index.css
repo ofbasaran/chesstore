@@ -1,5 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 body {
   margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #111827;
+  color: #f9fafb;
+  position: relative;
+}
+
+/* Satranç taşı SVG arka plan deseni */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Ctext x='10' y='55' font-size='40' fill='%23f59e0b'%3E♞%3C/text%3E%3Ctext x='65' y='110' font-size='40' fill='%23f59e0b'%3E♟%3C/text%3E%3C/svg%3E");
+  background-size: 120px 120px;
+  background-repeat: repeat;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
 }

@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import toast from "react-hot-toast";
 import api from "../api/axiosInstance";
 import { useCartStore } from "../store/cartStore";
+import { useFavoriteStore } from "../store/favoriteStore";
+import Breadcrumb from "../components/Breadcrumb";
 import type { Product } from "../types/product";
 
 const formatPrice = (value: number) =>
@@ -14,6 +16,7 @@ export default function ProductDetail() {
   const navigate = useNavigate();
   const incrementItemCount = useCartStore((s) => s.incrementItemCount);
   const openDrawer = useCartStore((s) => s.openDrawer);
+  const { toggleFavorite, isFavorite } = useFavoriteStore();
 
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState(true);
@@ -46,6 +49,19 @@ export default function ProductDetail() {
     } finally {
       setAdding(false);
     }
+  };
+
+  const handleToggleFavorite = () => {
+    if (!product) return;
+    toggleFavorite({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      imageUrl: product.imageUrl,
+      categoryName: product.categoryName,
+      stockQuantity: product.stockQuantity,
+    });
+    toast.success(isFavorite(product.id) ? "Favorilerden çıkarıldı" : "Favorilere eklendi!");
   };
 
   // Loading
@@ -81,18 +97,21 @@ export default function ProductDetail() {
 
   const outOfStock = product.stockQuantity <= 0;
   const lowStock = !outOfStock && product.stockQuantity <= 5;
+  const favorited = isFavorite(product.id);
 
   return (
     <div className="min-h-[70vh] bg-gray-900">
       <div className="mx-auto max-w-6xl px-4 py-10">
-        <button
-          onClick={() => navigate("/")}
-          className="mb-6 inline-flex items-center gap-1 text-sm text-gray-400 transition-colors hover:text-yellow-400"
-        >
-          ← Ürünlere Dön
-        </button>
+        {/* Breadcrumb */}
+        <Breadcrumb
+          items={[
+            { label: "Ana Sayfa", href: "/" },
+            { label: product.categoryName || "Ürünler", href: "/" },
+            { label: product.name },
+          ]}
+        />
 
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+        <div className="mt-6 grid grid-cols-1 gap-10 md:grid-cols-2">
           {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: -24 }}
@@ -140,7 +159,15 @@ export default function ProductDetail() {
               </span>
             )}
             <h1 className="mt-2 text-3xl font-bold text-white">{product.name}</h1>
-            <p className="mt-4 text-2xl font-bold text-yellow-500">₺{formatPrice(product.price)}</p>
+            <div className="mt-4 flex items-baseline gap-3">
+              <p className="text-2xl font-bold text-yellow-500">₺{formatPrice(product.price)}</p>
+              <span className="text-xs text-gray-500">KDV Dahil</span>
+              {product.price >= 500 && (
+                <span className="rounded-full bg-emerald-600/80 px-2.5 py-0.5 text-xs font-medium text-white">
+                  🚚 Ücretsiz Kargo
+                </span>
+              )}
+            </div>
 
             <p className="mt-6 leading-relaxed text-gray-400">{product.description}</p>
 
@@ -179,18 +206,33 @@ export default function ProductDetail() {
               </div>
             )}
 
-            {/* Add to cart */}
-            <button
-              onClick={handleAddToCart}
-              disabled={outOfStock || adding}
-              className={`mt-8 w-full rounded-xl py-4 font-semibold transition-all ${
-                outOfStock
-                  ? "cursor-not-allowed bg-gray-700 text-gray-500"
-                  : "bg-yellow-500 text-gray-900 hover:bg-yellow-400 active:scale-95"
-              }`}
-            >
-              {outOfStock ? "Stok Tükendi" : adding ? "Ekleniyor..." : "Sepete Ekle"}
-            </button>
+            {/* Action buttons */}
+            <div className="mt-8 flex gap-3">
+              <button
+                onClick={handleAddToCart}
+                disabled={outOfStock || adding}
+                className={`flex-1 rounded-xl py-4 font-semibold transition-all ${
+                  outOfStock
+                    ? "cursor-not-allowed bg-gray-700 text-gray-500"
+                    : "bg-yellow-500 text-gray-900 hover:bg-yellow-400 active:scale-95"
+                }`}
+              >
+                {outOfStock ? "Stok Tükendi" : adding ? "Ekleniyor..." : "Sepete Ekle"}
+              </button>
+
+              {/* Favorite button */}
+              <button
+                onClick={handleToggleFavorite}
+                title={favorited ? "Favorilerden Çıkar" : "Favorilere Ekle"}
+                className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-xl text-2xl transition-all ${
+                  favorited
+                    ? "bg-red-500/20 text-red-400 hover:bg-red-500/30"
+                    : "border border-gray-700 bg-gray-800 text-gray-400 hover:border-red-500/50 hover:text-red-400"
+                }`}
+              >
+                {favorited ? "♥" : "♡"}
+              </button>
+            </div>
           </motion.div>
         </div>
       </div>

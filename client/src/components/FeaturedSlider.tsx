@@ -1,10 +1,9 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
-import "swiper/css/navigation";
 
 interface Product {
   id: string;
@@ -17,6 +16,7 @@ interface Product {
 
 interface FeaturedSliderProps {
   products: Product[];
+  showAllLink?: boolean;
 }
 
 const formatPrice = (value: number) =>
@@ -56,27 +56,31 @@ function FeaturedCard({ product }: { product: Product }) {
   );
 }
 
-export default function FeaturedSlider({ products }: FeaturedSliderProps) {
-  const prevRef = useRef<HTMLButtonElement>(null);
-  const nextRef = useRef<HTMLButtonElement>(null);
+export default function FeaturedSlider({ products, showAllLink = false }: FeaturedSliderProps) {
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
 
   if (!products || products.length === 0) return null;
 
   return (
     <div className="relative">
+      {/* Tümünü Gör */}
+      {showAllLink && (
+        <div className="absolute right-0 -top-10 z-10">
+          <a
+            href="#urunler"
+            className="inline-flex items-center gap-1 text-sm font-medium text-yellow-400 transition-colors hover:text-yellow-300"
+          >
+            Tümünü Gör <span aria-hidden>→</span>
+          </a>
+        </div>
+      )}
+
       <Swiper
-        modules={[Autoplay, Navigation]}
+        modules={[Autoplay]}
         spaceBetween={20}
+        loop
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         onSwiper={setSwiper}
-        onBeforeInit={(sw) => {
-          // @ts-expect-error swiper navigation refs
-          sw.params.navigation.prevEl = prevRef.current;
-          // @ts-expect-error swiper navigation refs
-          sw.params.navigation.nextEl = nextRef.current;
-        }}
-        navigation={{ prevEl: prevRef.current, nextEl: nextRef.current }}
         breakpoints={{
           0: { slidesPerView: 1.2 },
           640: { slidesPerView: 2.5 },
@@ -93,7 +97,6 @@ export default function FeaturedSlider({ products }: FeaturedSliderProps) {
 
       {/* Custom navigation buttons */}
       <button
-        ref={prevRef}
         onClick={() => swiper?.slidePrev()}
         aria-label="Önceki"
         className="absolute -left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-yellow-500 text-gray-900 shadow-lg transition-all hover:bg-yellow-400 active:scale-90"
@@ -101,7 +104,6 @@ export default function FeaturedSlider({ products }: FeaturedSliderProps) {
         ‹
       </button>
       <button
-        ref={nextRef}
         onClick={() => swiper?.slideNext()}
         aria-label="Sonraki"
         className="absolute -right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-yellow-500 text-gray-900 shadow-lg transition-all hover:bg-yellow-400 active:scale-90"

@@ -10,7 +10,7 @@ export default function Login() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const setToken = useAuthStore((s: { setToken: any; }) => s.setToken);
+  const setToken = useAuthStore((s) => s.setToken);
   const navigate = useNavigate();
   const location = useLocation();
 

@@ -51,3 +51,8 @@ VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
 INSERT INTO "NotificationLogs" ("Id", "Channel", "Content", "IsSuccess", "OrderId", "SentAt", "Type", "UserId")
 VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
 [00:51:04 INF] OrderConfirmed notification sent for Order 9db4dd08-7aef-4176-99e4-1e0e0cb5f767
+[11:09:13 INF] [MOCK Email] To: 455d65ff-8962-4182-8306-1d23a8acc383 | Message: Your order has been confirmed. Order ID: 87cf38ac-8910-45ab-aa50-460ac57e83cb
+[11:09:13 INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime), @p6='?', @p7='?'], CommandType='Text', CommandTimeout='30']
+INSERT INTO "NotificationLogs" ("Id", "Channel", "Content", "IsSuccess", "OrderId", "SentAt", "Type", "UserId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+[11:09:13 INF] OrderConfirmed notification sent for Order 87cf38ac-8910-45ab-aa50-460ac57e83cb

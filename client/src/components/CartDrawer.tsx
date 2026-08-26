@@ -23,13 +23,19 @@ const formatPrice = (value: number) =>
 export default function CartDrawer() {
   const { isDrawerOpen, closeDrawer, setItemCount } = useCartStore();
   const [cart, setCart] = useState<CartResponse | null>(null);
+  const [isError, setIsError] = useState(false);
   const navigate = useNavigate();
 
-  const fetchCart = () => {
-    api.get<CartResponse>('/cart/api/cart').then((res) => {
+  const fetchCart = async () => {
+    try {
+      const res = await api.get<CartResponse>('/cart/api/cart');
       setCart(res.data);
       setItemCount(res.data.totalItems);
-    });
+      setIsError(false);
+    } catch {
+      setIsError(true);
+      setCart(null);
+    }
   };
 
   useEffect(() => {
@@ -38,13 +44,21 @@ export default function CartDrawer() {
 
   const updateQuantity = async (productId: string, quantity: number) => {
     if (quantity < 1) return;
-    await api.put(`/cart/api/cart/items/${productId}`, { quantity });
-    fetchCart();
+    try {
+      await api.put(`/cart/api/cart/items/${productId}`, { quantity });
+      await fetchCart();
+    } catch {
+      setIsError(true);
+    }
   };
 
   const removeItem = async (productId: string) => {
-    await api.delete(`/cart/api/cart/items/${productId}`);
-    fetchCart();
+    try {
+      await api.delete(`/cart/api/cart/items/${productId}`);
+      await fetchCart();
+    } catch {
+      setIsError(true);
+    }
   };
 
   const isEmpty = !cart || cart.items.length === 0;
@@ -86,7 +100,22 @@ export default function CartDrawer() {
 
         {/* Items */}
         <div className="flex-1 overflow-y-auto">
-          {isEmpty ? (
+          {isError ? (
+            <div className="flex h-full flex-col items-center justify-center px-6 text-center">
+              <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gray-800 text-4xl">🔒</div>
+              <p className="mt-4 font-medium text-white">Sepeti görüntülemek için lütfen giriş yapın</p>
+              <p className="mt-1 text-sm text-gray-500">Sepetinize eklediğiniz ürünleri görmek için oturum açmalısınız.</p>
+              <button
+                onClick={() => {
+                  closeDrawer();
+                  navigate('/login');
+                }}
+                className="mt-6 rounded-xl bg-yellow-500 px-6 py-2.5 text-sm font-semibold text-gray-900 transition-all hover:bg-yellow-400 active:scale-95"
+              >
+                Giriş Yap
+              </button>
+            </div>
+          ) : isEmpty ? (
             <div className="flex h-full flex-col items-center justify-center px-6 text-center">
               <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gray-800 text-4xl">🛒</div>
               <p className="mt-4 font-medium text-white">Sepetiniz boş</p>

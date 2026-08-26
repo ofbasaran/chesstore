@@ -16,6 +16,7 @@ export default function Categories() {
   const [description, setDescription] = useState("");
   const [saving, setSaving] = useState(false);
   const [deleteId, setDeleteId] = useState<string | null>(null);
+  const [editCategory, setEditCategory] = useState<AdminCategory | null>(null);
 
   const loadCategories = async () => {
     setLoading(true);
@@ -34,8 +35,16 @@ export default function Categories() {
   }, []);
 
   const openCreate = () => {
+    setEditCategory(null);
     setName("");
     setDescription("");
+    setModalOpen(true);
+  };
+
+  const openEdit = (category: AdminCategory) => {
+    setEditCategory(category);
+    setName(category.name);
+    setDescription(category.description ?? "");
     setModalOpen(true);
   };
 
@@ -47,15 +56,22 @@ export default function Categories() {
     }
     setSaving(true);
     try {
-      await api.post("/catalog/api/categories", {
+      const payload = {
         name: name.trim(),
         description: description.trim() || undefined,
-      });
-      toast.success("Kategori oluşturuldu.");
+      };
+      if (editCategory) {
+        await api.put(`/catalog/api/categories/${editCategory.id}`, payload);
+        toast.success("Kategori güncellendi.");
+      } else {
+        await api.post("/catalog/api/categories", payload);
+        toast.success("Kategori oluşturuldu.");
+      }
       setModalOpen(false);
+      setEditCategory(null);
       await loadCategories();
     } catch {
-      toast.error("Kategori oluşturulamadı.");
+      toast.error(editCategory ? "Kategori güncellenemedi." : "Kategori oluşturulamadı.");
     } finally {
       setSaving(false);
     }
@@ -111,7 +127,13 @@ export default function Categories() {
                     <td className="px-6 py-4 font-medium text-white">{c.name}</td>
                     <td className="px-6 py-4 text-gray-300">{c.description || "—"}</td>
                     <td className="px-6 py-4">
-                      <div className="flex justify-end">
+                      <div className="flex justify-end gap-2">
+                        <button
+                          onClick={() => openEdit(c)}
+                          className="rounded-lg border border-gray-600 px-3 py-1.5 text-xs font-medium text-gray-300 transition-colors hover:bg-gray-700"
+                        >
+                          Düzenle
+                        </button>
                         <button
                           onClick={() => setDeleteId(c.id)}
                           className="rounded-lg border border-red-500/40 px-3 py-1.5 text-xs font-medium text-red-400 transition-colors hover:bg-red-500/10"
@@ -132,7 +154,9 @@ export default function Categories() {
       {modalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4">
           <div className="w-full max-w-md rounded-2xl border border-gray-800 bg-gray-900 p-6 shadow-2xl">
-            <h3 className="mb-5 text-lg font-bold text-white">Yeni Kategori Ekle</h3>
+            <h3 className="mb-5 text-lg font-bold text-white">
+              {editCategory ? "Kategoriyi Düzenle" : "Yeni Kategori Ekle"}
+            </h3>
             <form onSubmit={handleSave} className="space-y-4">
               <div>
                 <label className="mb-1 block text-sm text-gray-300">Ad *</label>
@@ -155,7 +179,7 @@ export default function Categories() {
               <div className="flex justify-end gap-3 pt-2">
                 <button
                   type="button"
-                  onClick={() => setModalOpen(false)}
+                  onClick={() => { setModalOpen(false); setEditCategory(null); }}
                   className="rounded-lg border border-gray-700 px-4 py-2 text-sm text-gray-300 transition-colors hover:bg-gray-800"
                 >
                   İptal

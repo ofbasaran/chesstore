@@ -1,11 +1,19 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import toast from "react-hot-toast"; 
+import toast from "react-hot-toast";
 
 export default function Footer() {
+  const [kvkk, setKvkk] = useState(false);
+
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!kvkk) {
+      toast.error("KVKK metnini onaylamanız gerekmektedir.");
+      return;
+    }
     toast.success("Teşekkürler! Bültenimize abone oldunuz.");
     (e.currentTarget as HTMLFormElement).reset();
+    setKvkk(false);
   };
 
   return (
@@ -69,13 +77,28 @@ export default function Footer() {
           <div>
             <h4 className="mb-4 font-semibold text-white">Bülten</h4>
             <p className="mb-4 text-sm">Kampanyalardan haberdar ol</p>
-            <form onSubmit={handleSubscribe} className="flex flex-col gap-2">
+            <form onSubmit={handleSubscribe} className="flex flex-col gap-3">
               <input
                 type="email"
                 required
                 placeholder="E-posta adresiniz"
                 className="rounded-xl border border-gray-700 bg-gray-800 px-4 py-2.5 text-sm text-white placeholder-gray-500 outline-none transition-colors focus:border-yellow-500"
               />
+
+              {/* KVKK onay kutusu */}
+              <label className="flex items-start gap-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={kvkk}
+                  onChange={(e) => setKvkk(e.target.checked)}
+                  className="mt-0.5 h-4 w-4 cursor-pointer accent-yellow-500"
+                />
+                <span className="text-[11px] leading-relaxed text-gray-500">
+                  <a href="#" className="underline hover:text-yellow-400">KVKK Aydınlatma Metni</a>
+                  'ni okudum ve kişisel verilerimin işlenmesine onay veriyorum.
+                </span>
+              </label>
+
               <button
                 type="submit"
                 className="rounded-xl bg-yellow-500 px-4 py-2.5 text-sm font-semibold text-gray-900 transition-all hover:bg-yellow-400 active:scale-95"

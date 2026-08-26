@@ -29,3 +29,11 @@ info: System.Net.Http.HttpClient.ICatalogClient.ClientHandler[101]
       Received HTTP response headers after 8.708ms - 200
 info: System.Net.Http.HttpClient.ICatalogClient.LogicalHandler[101]
       End processing HTTP request after 8.8572ms - 200
+info: System.Net.Http.HttpClient.ICatalogClient.LogicalHandler[100]
+      Start processing HTTP request GET http://localhost:5035/api/products/3a1d6d23-89a1-473a-8327-9368362e30be
+info: System.Net.Http.HttpClient.ICatalogClient.ClientHandler[100]
+      Sending HTTP request GET http://localhost:5035/api/products/3a1d6d23-89a1-473a-8327-9368362e30be
+info: System.Net.Http.HttpClient.ICatalogClient.ClientHandler[101]
+      Received HTTP response headers after 73.4298ms - 200
+info: System.Net.Http.HttpClient.ICatalogClient.LogicalHandler[101]
+      End processing HTTP request after 99.9413ms - 200

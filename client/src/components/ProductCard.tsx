@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import api from "../api/axiosInstance";
 import { useCartStore } from "../store/cartStore";
+import { useFavoriteStore } from "../store/favoriteStore";
 
 interface Product {
   id: string;
@@ -24,13 +25,19 @@ const formatPrice = (value: number) =>
 
 export default function ProductCard({ product, onAddToCart }: ProductCardProps) {
   const openDrawer = useCartStore((s) => s.openDrawer);
+  const { toggleFavorite, isFavorite } = useFavoriteStore();
+  const navigate = useNavigate();
   const [added, setAdded] = useState(false);
   const [imgError, setImgError] = useState(false);
 
   const outOfStock = product.stockQuantity <= 0;
   const lowStock = !outOfStock && product.stockQuantity <= 5;
+  const freeShipping = product.price >= 500;
+  const favorited = isFavorite(product.id);
 
-  const handleAddToCart = async () => {
+  const handleAddToCart = async (e?: React.MouseEvent) => {
+    e?.preventDefault();
+    e?.stopPropagation();
     if (outOfStock) return;
 
     if (onAddToCart) {
@@ -56,20 +63,81 @@ export default function ProductCard({ product, onAddToCart }: ProductCardProps) 
     }
   };
 
+  const handleToggleFavorite = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleFavorite({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      imageUrl: product.imageUrl,
+      categoryName: product.categoryName,
+      stockQuantity: product.stockQuantity,
+    });
+    toast.success(favorited ? "Favorilerden çıkarıldı" : "Favorilere eklendi!");
+  };
+
+  const handleView = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    navigate(`/product/${product.id}`);
+  };
+
   return (
     <div className="group flex flex-col overflow-hidden rounded-2xl border border-white/5 bg-gray-800/60 shadow-lg shadow-black/30 transition-all duration-300 hover:-translate-y-1.5 hover:border-yellow-500/40 hover:shadow-2xl hover:shadow-black/50">
       {/* Image */}
-      <Link to={`/product/${product.id}`} className="relative block aspect-square overflow-hidden bg-gray-900">
-        {!imgError && product.imageUrl ? (
-          <img
-            src={product.imageUrl}
-            alt={product.name}
-            onError={() => setImgError(true)}
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-          />
-        ) : (
-          <div className="flex h-full w-full items-center justify-center text-7xl text-gray-700">♟</div>
-        )}
+      <div className="relative block aspect-square overflow-hidden bg-gray-900">
+        <Link to={`/product/${product.id}`} className="block h-full w-full">
+          {!imgError && product.imageUrl ? (
+            <img
+              src={product.imageUrl}
+              alt={product.name}
+              onError={() => setImgError(true)}
+              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+          ) : (
+            <div className="flex h-full w-full items-center justify-center text-7xl text-gray-700">♟</div>
+          )}
+        </Link>
+
+        {/* Hover overlay with action icons */}
+        <div className="absolute inset-0 flex items-center justify-center gap-3 bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+          {/* Favori */}
+          <button
+            onClick={handleToggleFavorite}
+            title={favorited ? "Favorilerden Çıkar" : "Favorilere Ekle"}
+            className={`flex h-10 w-10 items-center justify-center rounded-full shadow-lg transition-all duration-200 hover:scale-110 active:scale-95 ${
+              favorited
+                ? "bg-red-500 text-white"
+                : "bg-white/90 text-gray-800 hover:bg-red-500 hover:text-white"
+            }`}
+          >
+            {favorited ? "♥" : "♡"}
+          </button>
+          {/* Sepete Ekle */}
+          <button
+            onClick={handleAddToCart}
+            title="Sepete Ekle"
+            disabled={outOfStock}
+            className={`flex h-10 w-10 items-center justify-center rounded-full shadow-lg transition-all duration-200 hover:scale-110 active:scale-95 ${
+              outOfStock
+                ? "cursor-not-allowed bg-gray-600 text-gray-400"
+                : added
+                ? "bg-emerald-500 text-white"
+                : "bg-white/90 text-gray-800 hover:bg-yellow-500 hover:text-gray-900"
+            }`}
+          >
+            {added ? "✓" : "🛒"}
+          </button>
+          {/* İncele */}
+          <button
+            onClick={handleView}
+            title="Ürünü İncele"
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-gray-800 shadow-lg transition-all duration-200 hover:scale-110 hover:bg-yellow-500 hover:text-gray-900 active:scale-95"
+          >
+            👁
+          </button>
+        </div>
 
         {/* Category badge */}
         {product.categoryName && (
@@ -92,7 +160,14 @@ export default function ProductCard({ product, onAddToCart }: ProductCardProps) 
             Stokta
           </span>
         )}
-      </Link>
+
+        {/* Ücretsiz Kargo badge */}
+        {freeShipping && (
+          <span className="absolute bottom-3 left-3 rounded-full bg-emerald-600/90 px-2.5 py-0.5 text-[10px] font-semibold text-white backdrop-blur">
+            🚚 Ücretsiz Kargo
+          </span>
+        )}
+      </div>
 
       {/* Body */}
       <div className="flex flex-1 flex-col p-5">
@@ -111,6 +186,7 @@ export default function ProductCard({ product, onAddToCart }: ProductCardProps) 
             <span className="text-xl font-bold text-white">
               ₺{formatPrice(product.price)}
             </span>
+            <span className="text-[11px] text-gray-500">KDV Dahil</span>
           </div>
           <button
             onClick={handleAddToCart}
